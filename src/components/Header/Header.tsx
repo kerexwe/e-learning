@@ -1,9 +1,9 @@
-import React, { useEffect, useMemo, useState } from "react";
-import { useTranslation , Trans } from "react-i18next";
+import React, { useEffect, useState } from "react";
+import { useTranslation } from "react-i18next";
 import css from "./Header.module.scss";
 import LogoLight from "./assets/logo-light.svg";
 import LogoDark from "./assets/logo-dark.svg";
-import { Link, useLocation, useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import downArrowLight from "./assets/DownArrow-light.svg";
 import downArrowDark from "./assets/DownArrow-Dark.svg";
 import SearchLight from "./assets/search-light.svg";
@@ -39,7 +39,6 @@ const Header = () => {
 	const [PagesOpen, setPagesOpen] = useState<boolean>(false);
 	const [modalMobile, setModalMobile] = useState<boolean>(false);
 	const [isScrolled, setIsScrolled] = useState<boolean>(false);
-	const { pathname } = useLocation();
 
 	useEffect(() => {
 		window.addEventListener("scroll", handleScroll);
