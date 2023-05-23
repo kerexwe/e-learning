@@ -1,28 +1,21 @@
 {
-  "header": {
-    "Home": "главная",
-    "Components": "Компоненты",
-    "Pages": "Страницы",
-    "Documentation": "Документация",
-    "Login": "логин",
-    "JoinUs": "зарегистрироваться",
-    "Services": "Услуги",
-    "Blog": "Блог",
-    "CoursesList": "Список курсов",
-    "Contacts": "Контакты",
-    "AboutUs": "О нас"
-  },
-  "footer": {
-    "SEOAnalysis": {
-      "SEO1": "Получить бесплатно",
-      "SEO2": "SEO-анализ",
-      "email": "Hello@agency.com",
-      "address": "508 Bridle Avenue Newnan, GA 30263",
-      "name-placeholder": "Имя",
-      "email-placeholder": "Электронная почта",
-      "phone-placeholder": "Телефон",
-      "website-placeholder": "URL-адрес веб-сайта",
-      "SendRequest": "Отправить запрос"
-    }
-  }
+	"header": {
+		"Home": "главная",
+		"Components": "Компоненты",
+		"Pages": "Страницы",
+		"Documentation": "Документация",
+		"Login": "логин",
+		"JoinUs": "зарегистрироваться",
+		"Services": "Услуги",
+		"Blog": "Блог",
+		"CoursesList": "Список курсов",
+		"Contacts": "Контакты",
+		"AboutUs": "О нас"
+	},
+	"footer": {
+		"text": "Отправная точка для вашего следующего проекта на основе легко настраиваемого пользовательского интерфейса Material-UI © поможет вам создавать приложения быстрее и лучше.",
+		"email": "Электронная почта",
+		"HelpCenter": "Центр поддержки",
+		"Terms": "Условия использования"
+	}
 }
