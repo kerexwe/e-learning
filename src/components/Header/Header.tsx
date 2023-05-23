@@ -163,7 +163,6 @@ const Header = () => {
 								{Object.keys(options).map((option : any ) => (
 									<Button
 										key={option}
-										href={options[option]}
 										text={t(`header.${option}`)}
 										onClick={() => {
 											navigate(options[option]);
@@ -217,7 +216,6 @@ const Header = () => {
 						<Button
 							key={option}
 							className="main_text"
-							href={options[option]}
 							text={t(`header.${option}`)}
 							onClick={() => {
 								navigate(options[option]);
