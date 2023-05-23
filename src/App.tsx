@@ -11,6 +11,7 @@ import CoursesListDetails from "./pages/CoursesList/CoursesList";
 import CoursesContact from "./pages/CoursesContact/CoursesContact";
 import CoursesAbout from "./pages/CoursesAbout/CoursesAbout";
 import NotFoundPage from "./pages/NotFoundPage/NotFoundPage";
+import Header from './components/Header/Header';
 
 const App: React.FC = () => {
   const themeDark = AppSelector((state: ThemeType) => state.themeDark);
@@ -24,6 +25,7 @@ const App: React.FC = () => {
 
   return (
     <div className="App" style={styleVars}>
+      <Header/> 
       <Routes>
         <Route path="/" element={<CoursesLanding />} />
         <Route path="/Blog" element={<CoursesBlog />} />

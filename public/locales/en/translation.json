@@ -1,0 +1,28 @@
+{
+  "header": {
+    "Home": "Home",
+    "Components": "Components",
+    "Pages": "Pages",
+    "Documentation": "Documentation",
+    "Login": "Login",
+    "JoinUs": "Join Us",
+    "Services": "Services",
+    "Blog": "Blog",
+    "CoursesList": "Courses List",
+    "Contacts": "Contacts",
+    "AboutUs": "AboutUs"
+  },
+  "footer": {
+    "SEOAnalysis": {
+      "SEO1": "Get Free",
+      "SEO2": "SEO Analysis",
+      "email": "Hello@agency.com",
+      "address": "508 Bridle Avenue Newnan, GA 30263",
+      "name-placeholder": "Name",
+      "email-placeholder": "Email",
+      "phone-placeholder": "Phone",
+      "website-placeholder": "website URL",
+      "SendRequest" : "Send Request"
+    }
+  }
+}
