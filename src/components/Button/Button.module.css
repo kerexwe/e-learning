@@ -1,0 +1,39 @@
+.button {
+	padding: 10px 15px;
+	display: grid;
+	place-items: center;
+	place-content: center;
+	background: none;
+	border: none;
+	border-radius: 10px;
+	transition: 0.2s;
+	cursor: pointer;
+	margin: 0 5px;
+
+	font-weight: 600;
+	font-family: "Poppins";
+	font-style: normal;
+	font-weight: 600;
+	font-size: 15px;
+	line-height: 26px;
+}
+
+.button[about="white"] {
+	background: var(--textMain) !important;
+	color: var(--bkgMain);
+}
+.button[about="dark"] {
+	background: var(--textMain) !important;
+	color: var(--bkgMain);
+}
+.button[about="orange"] {
+	background: var(--Orange) !important;
+	color: white;
+}
+
+@media (min-width: 900px) {
+	.button:hover {
+		background: var(--bkgSec);
+		opacity: 0.6;
+	}
+}
