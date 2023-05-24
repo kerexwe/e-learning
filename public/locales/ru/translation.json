@@ -17,5 +17,22 @@
 		"email": "Электронная почта",
 		"HelpCenter": "Центр поддержки",
 		"Terms": "Условия использования"
+	},
+	"Landing": {
+		"Main": {
+			"free": "Бесплатные",
+			"Online": "Онлайн",
+			"Courses": "Курсы",
+			"From The Experts": "От экспертов",
+			"WatchVideo": "Смотреть видео",
+			"Button": "Готов к пуску",
+			"Learners": "Ученики",
+			"Courses_1": "Курсы",
+			"Graduates": "Выпускники"
+		},
+		"OurWork": {
+			"h2": "Мы работаем с",
+			"p": "Quisque aliquet, libero consequat elementum convallis."
+		}
 	}
 }

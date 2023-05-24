@@ -18,9 +18,22 @@
 		"HelpCenter": "HelpCenter",
 		"Terms": "Terms of Service"
 	},
-	"Landing" :{
-		"Main" : {
-			"Button": "Ready Start"
+	"Landing": {
+		"Main": {
+			"free": "Free",
+			"Online": "Online",
+			"Courses": "Courses",
+			"From The Experts": "From The Experts",
+			"WatchVideo": "Watch Video",
+			"Button": "Ready Start",
+
+			"Learners": "Learners",
+			"Courses_1": "Courses",
+			"Graduates": "Graduates"
+		},
+		"OurWork": {
+			"h2": "We Work With",
+			"p": "Quisque aliquet, libero consequat elementum convallis."
 		}
 	}
 }
