@@ -118,8 +118,11 @@ const Header = () => {
 		},
 	}));
 
+	const soundOff = new Audio(sound_off);
+	const soundOn = new Audio(sound_on);
+
 	function switchHandler() {
-		new Audio(themeDark ? sound_on : sound_off).play();
+		(themeDark ? soundOn : soundOff).play();
 		dispatch(changeTheme());
 	}
 
