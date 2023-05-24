@@ -16,7 +16,6 @@
   text-align: center;
   font-family: "Poppins", sans-serif;
   background: var(--bkgMain);
-  height: 200vh;
 }
 
 /* global classes */
@@ -68,11 +67,11 @@
 }
 
 .mainColorText {
-  color: var(--textPraimary) !important;
+  color: var(--textMain) !important;
 }
 
 .OrangeText {
-  color: var(--MainOrange) !important;
+  color: var(--Orange) !important;
 }
 
 @media (max-width: 678px) {
