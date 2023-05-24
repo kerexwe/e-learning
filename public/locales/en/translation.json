@@ -17,5 +17,10 @@
 		"email": "Email address",
 		"HelpCenter": "HelpCenter",
 		"Terms": "Terms of Service"
+	},
+	"Landing" :{
+		"Main" : {
+			"Button": "Ready Start"
+		}
 	}
 }
