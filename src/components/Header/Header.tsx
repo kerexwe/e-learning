@@ -196,25 +196,25 @@ const Header = () => {
 					<p className={css.Pages} onClick={() => toggle(setPagesOpen)}>
 						{t('header.Pages')}
 						<img className={PagesOpen ? css.Rotate_180_degree : null} src={themeDark ? downArrowDark : downArrowLight} alt='' />
+						<div className={css.Pages_options + ` ${PagesOpen ? '' : 'hide'}`}>
+							{Object.keys(options).map((option) => (
+								<Button
+									key={option}
+									className='main_text'
+									text={t(`header.${option}`)}
+									onClick={() => {
+										navigate(options[option]);
+										setPagesOpen(false);
+									}}>
+									{option}
+								</Button>
+							))}
+						</div>
 					</p>
 					<Link to={'/Documentation'} className={css.nav_links}>
 						{t('header.Documentation')}
 					</Link>
 				</nav>
-				<div className={css.Pages_options + ` ${PagesOpen ? '' : 'hide'}`}>
-					{Object.keys(options).map((option) => (
-						<Button
-							key={option}
-							className='main_text'
-							text={t(`header.${option}`)}
-							onClick={() => {
-								navigate(options[option]);
-								setPagesOpen(false);
-							}}>
-							{option}
-						</Button>
-					))}
-				</div>
 				<div className={css.header_left}>
 					<FormGroup onChange={switchHandler} className={`${css.switch__changeTheme}`}>
 						<FormControlLabel

@@ -27,6 +27,7 @@
   opacity: 0 !important;
   display: none;
   pointer-events: none;
+  transform: scale(0.8);
 }
 
 .main_text {
