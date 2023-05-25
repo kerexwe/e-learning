@@ -24,13 +24,19 @@
 .container {
   padding: 0 10%;
 }
+
 .container-mobile {
   padding: 0 10%;
 }
+
 .hide {
   opacity: 0 !important;
   display: none;
   pointer-events: none;
+}
+
+a{
+  text-decoration: none;
 }
 
 .main_text {
@@ -41,6 +47,7 @@
   font-size: 14px;
   line-height: 24px;
 }
+
 .secondary_text {
   color: var(--textSec);
   font-family: "Poppins", sans-serif;
@@ -49,6 +56,7 @@
   font-size: 14px;
   line-height: 26px;
 }
+
 .secondary_small_text {
   color: var(--textSec);
   font-family: "Poppins", sans-serif;
@@ -80,9 +88,11 @@
     width: 100%;
     text-align: center;
   }
+
   .container {
     padding: 0 4%;
   }
+
   .container-mobile {
     padding: 0 2%;
   }
@@ -119,6 +129,7 @@ h1 {
   font-size: 64px;
   line-height: 80px;
 }
+
 h2 {
   color: var(--textMain);
   font-family: "Barlow";
@@ -127,6 +138,7 @@ h2 {
   font-size: 48px;
   line-height: 64px;
 }
+
 h3 {
   color: var(--textMain);
   font-family: "Barlow";
@@ -135,6 +147,7 @@ h3 {
   font-size: 36px;
   line-height: 54px;
 }
+
 h4 {
   color: var(--textMain);
   font-family: "Barlow";
@@ -143,6 +156,7 @@ h4 {
   font-size: 24px;
   line-height: 36px;
 }
+
 h5 {
   color: var(--textMain);
   font-family: "Barlow";
@@ -151,6 +165,7 @@ h5 {
   font-size: 20px;
   line-height: 30px;
 }
+
 h6 {
   color: var(--textMain);
   font-family: "Barlow";
@@ -167,26 +182,31 @@ h6 {
     line-height: 50px;
     text-align: center;
   }
+
   h2 {
     font-weight: 700;
     font-size: 32px;
     line-height: 42px;
   }
+
   h3 {
     font-weight: 700;
     font-size: 24px;
     line-height: 36px;
   }
+
   h4 {
     font-weight: 700;
     font-size: 20px;
     line-height: 30px;
   }
+
   h5 {
     font-weight: 600;
     font-size: 20px;
     line-height: 30px;
   }
+
   h6 {
     font-weight: 600;
     font-size: 18px;

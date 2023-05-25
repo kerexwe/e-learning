@@ -24,5 +24,21 @@
       "website-placeholder": "website URL",
       "SendRequest" : "Send Request"
     }
+  },
+  "news": {
+    "register": "Register",
+    "h3": "Register Now Forget 20% Discount Every Courses",
+    "p": "Nam ipsum risus, rutrum vitae, vestibulum eu, molestievel, lacus. Sed magna purus, fermentum eu"
+  },
+  "feature": {
+    "title": "Featured Category",
+    "desc": "Since wire-frame renderings are relatively simple and fast to calculate, they are often used in cases",
+    "button": "Explore more",
+    "title2": "Management",
+    "title3": "Web Development",
+    "title5": "Machine Learning",
+    "title6": "Cyber Security",
+    "title7": "Marketing",
+    "student": "students"
   }
 }

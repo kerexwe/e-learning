@@ -21,6 +21,8 @@ const App: React.FC = () => {
     "--Orange": "#fa541c",
     "--bkgMain": themeDark ? "#161c24" : "#fff",
     "--bkgSec": themeDark ? "rgba(145, 158, 171, 0.12)" : "#f9fafb",
+    "--bkgSec2": themeDark ? "#212b36" : "#fff"
+    // "--shadow" : themeDark ? "-24px 24px 72px -8px rgba(0, 0, 0, 0.24);" : "-24px 24px 72px -8px rgba(145, 158, 171, 0.24);"
   };
 
   return (
