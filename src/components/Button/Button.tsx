@@ -2,6 +2,9 @@ import React from "react";
 import css from "./Button.module.scss";
 import { ButtonProps } from "../../types/types";
 
+//  explanation: 
+// types(about): dark | white | orange
+// onClick: take a handler
 
 const Button: React.FC<ButtonProps> = ({
   text,
