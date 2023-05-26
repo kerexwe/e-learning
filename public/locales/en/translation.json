@@ -50,5 +50,27 @@
     "job2": "Hr Manager",
     "job3": "Leader",
     "job4": "Project Manager"
-  }
-}
+  },
+	"Landing": {
+		"Main": {
+			"free": "Free",
+			"Online": "Online",
+			"Courses": "Courses",
+			"From The Experts": "From The Experts",
+			"WatchVideo": "Watch Video",
+			"Button": "Ready Start",
+
+			"Learners": "Learners",
+			"Courses_1": "Courses",
+			"Graduates": "Graduates"
+		},
+		"OurWork": {
+			"h2": "We Work With",
+			"p": "Quisque aliquet, libero consequat elementum convallis."
+		},
+		"DownloadApp" : {
+			"h2" : "Download App",
+			"p" : "Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Phasellus leo dolor, tempus non, auctor et, hendrerit quis, nisi.",
+			"h6" : "Scan QR code to install on your device"
+		}
+	}

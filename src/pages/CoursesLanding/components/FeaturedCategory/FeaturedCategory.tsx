@@ -36,6 +36,7 @@ function FeaturedCategory() {
             <div className={scss.wrapper}>
                 <div className={scss.wrapper__left}>
                     <div className={scss.wrapper__text}>
+
                         <h2>{t("feature.title")}</h2>
                         <p className='secondary_mid_text'>{t("feature.desc")}</p>
                     </div>
@@ -44,6 +45,7 @@ function FeaturedCategory() {
                 <div className={scss.wrapper__right}>
                     {
                         FeaturedConst.slice(index).map((item) => <FeaturedCard key={item.id} {...item} />)
+
                     }
                 </div>
             </div>

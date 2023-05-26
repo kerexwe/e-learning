@@ -12,6 +12,7 @@ function Newsletter() {
             <div className={scss.wrapper}>
                 <div className={scss.box}>
                     <img src={img} alt="" className={scss.box__mImg} />
+
                     <div className={scss.box__left}>
                         <div className={scss.box__top}>
                             <h3> {t('news.h3')} </h3>

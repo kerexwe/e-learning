@@ -1,6 +1,6 @@
 import React, { useEffect, useState, Dispatch } from 'react';
 import { useTranslation } from 'react-i18next';
-import { Link, useNavigate } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { AppDispatch, AppSelector } from '../../redux';
 import { changeTheme } from '../../redux/themeSlice';
 import MediaQuery from 'react-responsive';
@@ -36,9 +36,10 @@ const Header = () => {
 	const dispatch = AppDispatch();
 	const themeDark = AppSelector((state) => state.themeDark);
 	const { t, i18n } = useTranslation();
-
+	const location = useLocation();
 	const navigate = useNavigate();
-	const [PagesOpen, setPagesOpen] = useState<boolean>(false);
+
+	const [PagesOpen, setPagesOpen] = useState(false);
 	const [modalMobile, setModalMobile] = useState<boolean>(false);
 	const [isScrolled, setIsScrolled] = useState<boolean>(false);
 
@@ -66,6 +67,11 @@ const Header = () => {
 			setIsScrolled(false);
 		}
 	};
+
+	useEffect(() => {
+		setPagesOpen(false);
+		setModalMobile(false);
+	}, [location.pathname]);
 
 	const toggle = (set: Dispatch<React.SetStateAction<boolean>>): void => {
 		set((elem: boolean) => !elem);
@@ -118,8 +124,11 @@ const Header = () => {
 		},
 	}));
 
+	const soundOff = new Audio(sound_off);
+	const soundOn = new Audio(sound_on);
+
 	function switchHandler() {
-		new Audio(themeDark ? sound_on : sound_off).play();
+		(themeDark ? soundOn : soundOff).play();
 		dispatch(changeTheme());
 	}
 
@@ -166,8 +175,8 @@ const Header = () => {
 										key={option}
 										text={t(`header.${option}`)}
 										onClick={() => {
-											navigate(options[option]);
 											setPagesOpen(false);
+											navigate(options[option]);
 										}}>
 										{option}
 									</Button>
@@ -180,7 +189,6 @@ const Header = () => {
 					</Link>
 				</div>
 			</MediaQuery>
-
 			<MediaQuery minWidth={1201}>
 				<nav>
 					<img src={themeDark ? LogoDark : LogoLight} alt='logo' />
@@ -193,25 +201,24 @@ const Header = () => {
 					<p className={css.Pages} onClick={() => toggle(setPagesOpen)}>
 						{t('header.Pages')}
 						<img className={PagesOpen ? css.Rotate_180_degree : null} src={themeDark ? downArrowDark : downArrowLight} alt='' />
+						<div className={css.Pages_options + ` ${PagesOpen ? '' : 'hide'}`}>
+							{Object.keys(options).map((option) => (
+								<Button
+									key={option}
+									className='main_text'
+									text={t(`header.${option}`)}
+									onClick={() => {
+										navigate(options[option]);
+									}}>
+									{option}
+								</Button>
+							))}
+						</div>
 					</p>
 					<Link to={'/Documentation'} className={css.nav_links}>
 						{t('header.Documentation')}
 					</Link>
 				</nav>
-				<div className={css.Pages_options + ` ${PagesOpen ? '' : 'hide'}`}>
-					{Object.keys(options).map((option) => (
-						<Button
-							key={option}
-							className='main_text'
-							text={t(`header.${option}`)}
-							onClick={() => {
-								navigate(options[option]);
-								setPagesOpen(false);
-							}}>
-							{option}
-						</Button>
-					))}
-				</div>
 				<div className={css.header_left}>
 					<FormGroup onChange={switchHandler} className={`${css.switch__changeTheme}`}>
 						<FormControlLabel

@@ -13,6 +13,7 @@ import CoursesAbout from './pages/CoursesAbout/CoursesAbout';
 import NotFoundPage from './pages/NotFoundPage/NotFoundPage';
 import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer';
+import Newsletter from './components/Newsletter/Newsletter';
 
 const App: React.FC = () => {
   const themeDark = AppSelector((state: ThemeType) => state.themeDark);
@@ -24,7 +25,8 @@ const App: React.FC = () => {
     "--bkgSec": themeDark ? "rgba(145, 158, 171, 0.12)" : "#f9fafb",
     "--bkgSec2": themeDark ? "#212b36" : "#fff"
   };
-	return (
+
+    return (
 		<div className='App' style={styleVars}>
 			<Header />
 			<Routes>
@@ -37,6 +39,7 @@ const App: React.FC = () => {
 				<Route path='/AboutUs' element={<CoursesAbout />} />
 				<Route path='*' element={<NotFoundPage />} />
 			</Routes>
+			<Newsletter/>
 			<Footer />
 		</div>
 	);

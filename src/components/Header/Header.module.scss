@@ -125,15 +125,14 @@
 .Pages_options {
   position: absolute;
   background-color: var(--bkgMain);
-  margin: 0;
+  margin: auto;
   opacity: 1;
   display: flex;
   width: fit-content;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  top: 80px;
-  left: 28%;
+  top: 40px;
   cursor: pointer;
   line-height: inherit;
   border-radius: 10px;

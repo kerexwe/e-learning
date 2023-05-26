@@ -51,6 +51,27 @@
     "job2": "Менеджер по персоналу",
     "job3": "Лидер",
     "job4": "Руководитель проекта"
-  }
+  },
+	"Landing": {
+		"Main": {
+			"free": "Бесплатные",
+			"Online": "Онлайн",
+			"Courses": "Курсы",
+			"From The Experts": "От экспертов",
+			"WatchVideo": "Смотреть видео",
+			"Button": "Готов к пуску",
+			"Learners": "Ученики",
+			"Courses_1": "Курсы",
+			"Graduates": "Выпускники"
+		},
+		"OurWork": {
+			"h2": "Мы работаем с",
+			"p": "Quisque aliquet, libero consequat elementum convallis."
+		},
+		"DownloadApp" : {
+			"h2" : "Скачать приложение",
+			"p" : "Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Phasellus leo dolor, tempus non, auctor et, hendrerit quis, nisi.",
+			"h6" : "Отсканируйте QR-код для установки на свое устройство"
+		}
+	}
 
-}
