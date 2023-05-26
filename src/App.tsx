@@ -13,6 +13,7 @@ import CoursesAbout from './pages/CoursesAbout/CoursesAbout';
 import NotFoundPage from './pages/NotFoundPage/NotFoundPage';
 import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer';
+import Newsletter from './components/Newsletter/Newsletter';
 
 const App: React.FC = () => {
   const themeDark = AppSelector((state: ThemeType) => state.themeDark);
@@ -39,6 +40,7 @@ const App: React.FC = () => {
 				<Route path='/AboutUs' element={<CoursesAbout />} />
 				<Route path='*' element={<NotFoundPage />} />
 			</Routes>
+			<Newsletter/>
 			<Footer />
 		</div>
 	);

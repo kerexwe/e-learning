@@ -8,8 +8,7 @@
 	padding: 0;
 	box-sizing: border-box;
 	transition: 0.3s;
-	font-family: "Sans-Serif", "Poppins";
-
+	font-family: 'Sans-Serif', 'Poppins';
 }
 
 .App {
@@ -33,8 +32,8 @@
 	transform: scale(0.8);
 }
 
-a{
-  text-decoration: none;
+a {
+	text-decoration: none;
 }
 
 .main_text {
@@ -200,4 +199,9 @@ h6 {
 		font-size: 18px;
 		line-height: 28px;
 	}
+}
+
+.divider {
+	border: 1px dashed rgba(145, 158, 171, 0.24);
+	width: 100%;
 }

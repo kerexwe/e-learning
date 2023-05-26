@@ -29,7 +29,7 @@ const Main: FC = () => {
 						{t(`${base}WatchVideo`)}
 					</h6>
 				</span>
-				<hr />
+				<hr className='divider'/>
 				<div className={css.info}>
                     <span>
                         <h3>14k+</h3>
