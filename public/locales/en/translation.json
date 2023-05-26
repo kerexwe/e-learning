@@ -13,17 +13,10 @@
     "AboutUs": "AboutUs"
   }, 
   "footer": {
-    "SEOAnalysis": {
-      "SEO1": "Get Free",
-      "SEO2": "SEO Analysis",
-      "email": "Hello@agency.com",
-      "address": "508 Bridle Avenue Newnan, GA 30263",
-      "name-placeholder": "Name",
-      "email-placeholder": "Email",
-      "phone-placeholder": "Phone",
-      "website-placeholder": "website URL",
-      "SendRequest" : "Send Request"
-    }
+    "text": "The starting point for your next project based on easy-to-customize Material-UI © helps you build apps faster and better.",
+    "email": "Email address",
+    "HelpCenter": "HelpCenter",
+    "Terms": "Terms of Service"
   },
   "news": {
     "register": "Register",
@@ -74,3 +67,4 @@
 			"h6" : "Scan QR code to install on your device"
 		}
 	}
+}
