@@ -18,8 +18,10 @@
 }
 
 .button[about="white"] {
-	background: var(--textMain) !important;
-	color: var(--bkgMain);
+	background: var(--bkgSec2) !important;
+	color: var(--textMain); 
+	border: 1px solid rgba(145, 158, 171, 0.32);
+border-radius: 8px;
 }
 .button[about="dark"] {
 	background: var(--textMain) !important;

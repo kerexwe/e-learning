@@ -11,7 +11,7 @@
     "CoursesList": "Courses List",
     "Contacts": "Contacts",
     "AboutUs": "AboutUs"
-  },
+  }, 
   "footer": {
     "SEOAnalysis": {
       "SEO1": "Get Free",
@@ -40,5 +40,15 @@
     "title6": "Cyber Security",
     "title7": "Marketing",
     "student": "students"
+  },
+  "team": {
+    "name1": "Eleanor Pena",
+    "name2": "Kathryn Murphy",
+    "name3": "Dianne Russell",
+    "name4": "Esther Howard",
+    "job1": "UI Designer",
+    "job2": "Hr Manager",
+    "job3": "Leader",
+    "job4": "Project Manager"
   }
 }

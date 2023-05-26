@@ -9,13 +9,13 @@
         padding: 120px 0px;
         gap: 122px;
 
-        .left {
+        .wrapper__left {
             display: flex;
             flex-direction: column;
             align-items: flex-start;
             gap: 40px;
 
-            .left__text {
+            .wrapper__text {
                 display: flex;
                 flex-direction: column;
                 align-items: flex-start;
@@ -24,7 +24,7 @@
             }
         }
 
-        .right {
+        .wrapper__right {
             display: flex;
             flex-wrap: wrap;
             gap: 24px;
@@ -40,10 +40,10 @@
             flex-direction: column;
             gap: 64px;
 
-            .left {
+            .wrapper__left {
                 align-items: center;
 
-                .left__text {
+                .wrapper__text {
                     text-align: center;
                     align-items: center;
                 }
