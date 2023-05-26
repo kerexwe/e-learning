@@ -24,7 +24,6 @@ const App: React.FC = () => {
     "--bkgMain": themeDark ? "#161c24" : "#fff",
     "--bkgSec": themeDark ? "rgba(145, 158, 171, 0.12)" : "#f9fafb",
     "--bkgSec2": themeDark ? "#212b36" : "#fff"
- 
   };
 
     return (

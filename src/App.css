@@ -22,6 +22,8 @@
 /* global classes */
 
 .container {
+.container-mobile {
+  padding: 0 10%;
 	padding: 0 12%;
 }
 
@@ -34,6 +36,10 @@
 
 a {
 	text-decoration: none;
+}
+
+a{
+  text-decoration: none;
 }
 
 .main_text {
@@ -81,6 +87,7 @@ a {
 }
 
 @media (max-width: 678px) {
+
 	.sections_title {
 		width: 100%;
 		text-align: center;
@@ -168,6 +175,7 @@ h6 {
 }
 
 @media (max-width: 678px) {
+
 	h1 {
 		font-weight: 700;
 		font-size: 40px;

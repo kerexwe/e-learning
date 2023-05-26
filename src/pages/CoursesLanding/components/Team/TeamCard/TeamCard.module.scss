@@ -1,0 +1,29 @@
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    border: 1px solid rgba(145, 158, 171, 0.08);
+    box-shadow: -16px 16px 56px -8px rgba(145, 158, 171, 0.16);
+    border-radius: 16px;
+    position: relative;
+
+    .card__text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 24px 24px 12px;
+        gap: 4px;
+        
+    }
+
+    .img{
+        position: absolute;
+        top: 92px;
+    }
+
+    .img1{
+        border-bottom-left-radius: 16px;
+        border-bottom-right-radius: 16px;
+
+    }
+}

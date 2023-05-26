@@ -1,39 +1,56 @@
 {
-	"header": {
-		"Home": "Home",
-		"Components": "Components",
-		"Pages": "Pages",
-		"Documentation": "Documentation",
-		"Login": "Login",
-		"JoinUs": "Join Us",
-		"Services": "Services",
-		"Blog": "Blog",
-		"CoursesList": "Courses List",
-		"Contacts": "Contacts",
-		"AboutUs": "AboutUs"
-	},
-	"footer": {
-		"text": "The starting point for your next project based on easy-to-customize Material-UI © helps you build apps faster and better.",
-		"email": "Email address",
-		"HelpCenter": "HelpCenter",
-		"Terms": "Terms of Service"
-	},
-	"news": {
-		"register": "Register",
-		"h3": "Register Now Forget 20% Discount Every Courses",
-		"p": "Nam ipsum risus, rutrum vitae, vestibulum eu, molestievel, lacus. Sed magna purus, fermentum eu"
-	},
-	"feature": {
-		"title": "Featured Category",
-		"desc": "Since wire-frame renderings are relatively simple and fast to calculate, they are often used in cases",
-		"button": "Explore more",
-		"title2": "Management",
-		"title3": "Web Development",
-		"title5": "Machine Learning",
-		"title6": "Cyber Security",
-		"title7": "Marketing",
-		"student": "students"
-	},
+  "header": {
+    "Home": "Home",
+    "Components": "Components",
+    "Pages": "Pages",
+    "Documentation": "Documentation",
+    "Login": "Login",
+    "JoinUs": "Join Us",
+    "Services": "Services",
+    "Blog": "Blog",
+    "CoursesList": "Courses List",
+    "Contacts": "Contacts",
+    "AboutUs": "AboutUs"
+  }, 
+  "footer": {
+    "SEOAnalysis": {
+      "SEO1": "Get Free",
+      "SEO2": "SEO Analysis",
+      "email": "Hello@agency.com",
+      "address": "508 Bridle Avenue Newnan, GA 30263",
+      "name-placeholder": "Name",
+      "email-placeholder": "Email",
+      "phone-placeholder": "Phone",
+      "website-placeholder": "website URL",
+      "SendRequest" : "Send Request"
+    }
+  },
+  "news": {
+    "register": "Register",
+    "h3": "Register Now Forget 20% Discount Every Courses",
+    "p": "Nam ipsum risus, rutrum vitae, vestibulum eu, molestievel, lacus. Sed magna purus, fermentum eu"
+  },
+  "feature": {
+    "title": "Featured Category",
+    "desc": "Since wire-frame renderings are relatively simple and fast to calculate, they are often used in cases",
+    "button": "Explore more",
+    "title2": "Management",
+    "title3": "Web Development",
+    "title5": "Machine Learning",
+    "title6": "Cyber Security",
+    "title7": "Marketing",
+    "student": "students"
+  },
+  "team": {
+    "name1": "Eleanor Pena",
+    "name2": "Kathryn Murphy",
+    "name3": "Dianne Russell",
+    "name4": "Esther Howard",
+    "job1": "UI Designer",
+    "job2": "Hr Manager",
+    "job3": "Leader",
+    "job4": "Project Manager"
+  },
 	"Landing": {
 		"Main": {
 			"free": "Free",
@@ -57,4 +74,3 @@
 			"h6" : "Scan QR code to install on your device"
 		}
 	}
-}

@@ -14,7 +14,8 @@
         background: rgba(250, 84, 28, 0.08);
         border-radius: 24px;
 
-        .mImg {
+        .box__mImg {
+
             display: none;
         }
 
@@ -67,7 +68,8 @@
                 display: none;
             }
 
-            .mImg {
+            .box__mImg {
+
                 display: block;
                 width: 295px;
             }

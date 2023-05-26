@@ -1,0 +1,91 @@
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 120px 0px;
+    gap: 80px;
+
+    .text {
+        color: #FA541C;
+        text-transform: uppercase;
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 20px;
+    }
+
+    .wrap {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 122px;
+
+        .wrap__right {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 80px;
+
+            .wrap__top {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 24px;
+                text-align: start;
+            }
+
+            .wrap__bottom {
+                display: flex;
+                flex-direction: row;
+                align-items: flex-start;
+                gap: 80px;
+
+                div {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    gap: 24px;
+                    text-align: start;
+
+                    hr {
+                        width: 24px;
+                        height: 3px;
+                        background: #FA541C;
+                        border-radius: 50px;
+                        border: none;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    .wrapper {
+        padding: 64px 0px;
+        gap: 16px;
+
+        .wrap {
+            img {
+                display: none;
+            }
+
+            .wrap__right {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 64px;
+
+                .wrap__bottom {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 40px;
+                    div{
+                        width: 335px;
+                    }
+                }
+            }
+        }
+    }
+}
