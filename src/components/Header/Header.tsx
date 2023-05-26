@@ -1,6 +1,6 @@
 import React, { useEffect, useState, Dispatch } from 'react';
 import { useTranslation } from 'react-i18next';
-import { Link, useNavigate } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { AppDispatch, AppSelector } from '../../redux';
 import { changeTheme } from '../../redux/themeSlice';
 import MediaQuery from 'react-responsive';
@@ -36,9 +36,10 @@ const Header = () => {
 	const dispatch = AppDispatch();
 	const themeDark = AppSelector((state) => state.themeDark);
 	const { t, i18n } = useTranslation();
-
+	const location = useLocation();
 	const navigate = useNavigate();
-	const [PagesOpen, setPagesOpen] = useState<boolean>(false);
+
+	const [PagesOpen, setPagesOpen] = useState(false);
 	const [modalMobile, setModalMobile] = useState<boolean>(false);
 	const [isScrolled, setIsScrolled] = useState<boolean>(false);
 
@@ -66,6 +67,10 @@ const Header = () => {
 			setIsScrolled(false);
 		}
 	};
+
+	useEffect(() => {
+		setPagesOpen(false);
+	}, [location.pathname]);
 
 	const toggle = (set: Dispatch<React.SetStateAction<boolean>>): void => {
 		set((elem: boolean) => !elem);
@@ -169,8 +174,8 @@ const Header = () => {
 										key={option}
 										text={t(`header.${option}`)}
 										onClick={() => {
-											navigate(options[option]);
 											setPagesOpen(false);
+											navigate(options[option]);
 										}}>
 										{option}
 									</Button>
@@ -183,7 +188,6 @@ const Header = () => {
 					</Link>
 				</div>
 			</MediaQuery>
-
 			<MediaQuery minWidth={1201}>
 				<nav>
 					<img src={themeDark ? LogoDark : LogoLight} alt='logo' />
@@ -204,7 +208,6 @@ const Header = () => {
 									text={t(`header.${option}`)}
 									onClick={() => {
 										navigate(options[option]);
-										setPagesOpen(false);
 									}}>
 									{option}
 								</Button>
