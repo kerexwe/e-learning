@@ -1,9 +1,10 @@
 import React from "react";
+import Main from './components/Main/Main';
 
 const CoursesLanding: React.FC = () => {
   return (
     <section>
-      <h1>CoursesLanding</h1>
+      <Main/>
     </section>
   );
 };

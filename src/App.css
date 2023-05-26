@@ -21,15 +21,13 @@
 /* global classes */
 
 .container {
-  padding: 0 10%;
-}
-.container-mobile {
-  padding: 0 10%;
+  padding: 0 12%;
 }
 .hide {
   opacity: 0 !important;
   display: none;
   pointer-events: none;
+  transform: scale(0.8);
 }
 
 .main_text {
@@ -80,10 +78,7 @@
     text-align: center;
   }
   .container {
-    padding: 0 4%;
-  }
-  .container-mobile {
-    padding: 0 2%;
+    padding: 0 6%;
   }
 }
 
