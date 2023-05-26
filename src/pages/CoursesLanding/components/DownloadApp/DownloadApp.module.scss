@@ -29,17 +29,15 @@
 			align-self: stretch;
 			span {
 				display: flex;
-				max-width: 310px;
-				flex-direction: row;
 				align-items: center;
 				padding: 0px;
 				gap: 24px;
 			}
 			.storesButtons {
 				display: flex;
-				flex-direction: row;
 				padding: 0px;
 				gap: 16px;
+                justify-content: center;
 			}
 		}
 	}

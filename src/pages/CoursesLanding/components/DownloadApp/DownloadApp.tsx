@@ -6,19 +6,24 @@ import PlayStore from './assets/PlayStore.svg';
 import qr from './assets/qr.svg';
 import qr_dark from './assets/qr_dark.svg';
 import { AppSelector } from '../../../../redux';
+import { useTranslation } from 'react-i18next';
 
+
+const base = "Landing.DownloadApp."
 const DownloadApp: FC = () => {
+    const {t} = useTranslation();
+
     const themeDark = AppSelector((s) => s.themeDark)
 	return (
 		<section className={`${css.wrapper} container`}>
 			<div className={css.content}>
 				<article>
-					<h2>DownloadApp</h2> <p className='secondary_mid_text'>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Phasellus leo dolor, tempus non, auctor et, hendrerit quis, nisi.</p>
+					<h2>{t(`${base}h2`)}</h2> <p className='secondary_mid_text'>{t(`${base}p`)}</p>
 				</article>
 				<div className={css.downloading_info}>
 					<span>
 						<img src={themeDark ? qr_dark : qr} alt='QR' />
-						<h6>Scan QR code to install on your device</h6>
+						<h6>{t(`${base}h6`)}</h6>
 					</span>
                     <hr className='divider' />
 					<span className={css.storesButtons}>
