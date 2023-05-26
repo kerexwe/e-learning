@@ -1,0 +1,29 @@
+.cardWrap {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 24px;
+    gap: 8px;
+    border: 1px solid rgba(145, 158, 171, 0.24);
+    border-radius: 12px;
+    width: 204.67px;
+    height: 108px;
+    text-align: start;
+
+    &:hover {
+        background: var(--bkgSec2);
+        box-shadow: -24px 24px 72px -8px rgba(145, 158, 171, 0.24);
+        border: none;
+
+        h6 {
+            color: #FA541C;
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    .cardWrap {
+        width: 159.5px;
+        height: 100%;
+    }
+}

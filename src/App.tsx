@@ -15,16 +15,18 @@ import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer';
 
 const App: React.FC = () => {
-	const themeDark = AppSelector((state: ThemeType) => state.themeDark);
-	const styleVars: object = {
-		'--textMain': themeDark ? '#fff' : '#212b36',
-		'--textSec': themeDark ? '#919eab' : '#637381',
-		'--Orange': '#fa541c',
-		'--bkgMain': themeDark ? '#161c24' : '#fff',
-		'--bkgSec': themeDark ? 'rgba(145, 158, 171, 0.12)' : '#f9fafb',
-	};
+  const themeDark = AppSelector((state: ThemeType) => state.themeDark);
+  const styleVars: object = {
+    "--textMain": themeDark ? "#fff" : "#212b36",
+    "--textSec": themeDark ? "#919eab" : "#637381",
+    "--Orange": "#fa541c",
+    "--bkgMain": themeDark ? "#161c24" : "#fff",
+    "--bkgSec": themeDark ? "rgba(145, 158, 171, 0.12)" : "#f9fafb",
+    "--bkgSec2": themeDark ? "#212b36" : "#fff"
+ 
+  };
 
-	return (
+    return (
 		<div className='App' style={styleVars}>
 			<Header />
 			<Routes>
