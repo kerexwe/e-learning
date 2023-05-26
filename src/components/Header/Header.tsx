@@ -70,6 +70,7 @@ const Header = () => {
 
 	useEffect(() => {
 		setPagesOpen(false);
+		setModalMobile(false);
 	}, [location.pathname]);
 
 	const toggle = (set: Dispatch<React.SetStateAction<boolean>>): void => {
