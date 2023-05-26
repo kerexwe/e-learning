@@ -1,0 +1,39 @@
+@mixin flex-c {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.wrapper {
+	@include flex-c;
+	padding-top: 80px;
+	padding-bottom: 80px;
+	gap: 64px;
+	.title {
+		@include flex-c;
+		gap: 24px;
+	}
+	.icons {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		gap: 64px;
+		overflow-x: scroll;
+		width: 100%;
+		&::-webkit-scrollbar {
+			display: none;
+		}
+	}
+}
+
+@media (max-width: 678px) {
+	.wrapper {
+		padding-top: 60px;
+		padding-bottom: 60px;
+
+		.icons {
+			padding: 0 10%;
+			justify-content: flex-start;
+		}
+	}
+}

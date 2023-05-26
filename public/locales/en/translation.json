@@ -1,19 +1,23 @@
-{
-  "header": {
-    "Home": "Home",
-    "Components": "Components",
-    "Pages": "Pages",
-    "Documentation": "Documentation",
-    "Login": "Login",
-    "JoinUs": "Join Us",
-    "Services": "Services",
-    "Blog": "Blog",
-    "CoursesList": "Courses List",
-    "Contacts": "Contacts",
-    "AboutUs": "AboutUs"
-  },
-  "footer": {
-    "SEOAnalysis": {
+
+	"header": {
+		"Home": "Home",
+		"Components": "Components",
+		"Pages": "Pages",
+		"Documentation": "Documentation",
+		"Login": "Login",
+		"JoinUs": "Join Us",
+		"Services": "Services",
+		"Blog": "Blog",
+		"CoursesList": "Courses List",
+		"Contacts": "Contacts",
+		"AboutUs": "AboutUs"
+	},
+	"footer": {
+		"text": "The starting point for your next project based on easy-to-customize Material-UI © helps you build apps faster and better.",
+		"email": "Email address",
+		"HelpCenter": "HelpCenter",
+		"Terms": "Terms of Service",
+        "SEOAnalysis": {
       "SEO1": "Get Free",
       "SEO2": "SEO Analysis",
       "email": "Hello@agency.com",
@@ -24,7 +28,25 @@
       "website-placeholder": "website URL",
       "SendRequest" : "Send Request"
     }
-  },
+	},
+	"Landing": {
+		"Main": {
+			"free": "Free",
+			"Online": "Online",
+			"Courses": "Courses",
+			"From The Experts": "From The Experts",
+			"WatchVideo": "Watch Video",
+			"Button": "Ready Start",
+
+			"Learners": "Learners",
+			"Courses_1": "Courses",
+			"Graduates": "Graduates"
+		},
+		"OurWork": {
+			"h2": "We Work With",
+			"p": "Quisque aliquet, libero consequat elementum convallis."
+		}
+	},
   "news": {
     "register": "Register",
     "h3": "Register Now Forget 20% Discount Every Courses",

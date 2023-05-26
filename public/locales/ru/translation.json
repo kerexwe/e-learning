@@ -1,19 +1,23 @@
-{
-  "header": {
-    "Home": "главная",
-    "Components": "Компоненты",
-    "Pages": "Страницы",
-    "Documentation": "Документация",
-    "Login": "логин",
-    "JoinUs": "зарегистрироваться",
-    "Services": "Услуги",
-    "Blog": "Блог",
-    "CoursesList": "Список курсов",
-    "Contacts": "Контакты",
-    "AboutUs": "О нас"
-  },
-  "footer": {
-    "SEOAnalysis": {
+
+	"header": {
+		"Home": "главная",
+		"Components": "Компоненты",
+		"Pages": "Страницы",
+		"Documentation": "Документация",
+		"Login": "логин",
+		"JoinUs": "зарегистрироваться",
+		"Services": "Услуги",
+		"Blog": "Блог",
+		"CoursesList": "Список курсов",
+		"Contacts": "Контакты",
+		"AboutUs": "О нас"
+	},
+	"footer": {
+		"text": "Отправная точка для вашего следующего проекта на основе легко настраиваемого пользовательского интерфейса Material-UI © поможет вам создавать приложения быстрее и лучше.",
+		"email": "Электронная почта",
+		"HelpCenter": "Центр поддержки",
+		"Terms": "Условия использования",
+        "SEOAnalysis": {
       "SEO1": "Получить бесплатно",
       "SEO2": "SEO-анализ",
       "email": "Hello@agency.com",
@@ -24,7 +28,25 @@
       "website-placeholder": "URL-адрес веб-сайта",
       "SendRequest": "Отправить запрос"
     }
-  },
+
+	},
+	"Landing": {
+		"Main": {
+			"free": "Бесплатные",
+			"Online": "Онлайн",
+			"Courses": "Курсы",
+			"From The Experts": "От экспертов",
+			"WatchVideo": "Смотреть видео",
+			"Button": "Готов к пуску",
+			"Learners": "Ученики",
+			"Courses_1": "Курсы",
+			"Graduates": "Выпускники"
+		},
+		"OurWork": {
+			"h2": "Мы работаем с",
+			"p": "Quisque aliquet, libero consequat elementum convallis."
+		}
+	},
   "news": {
     "register": "Регистр",
     "h3": "Зарегистрируйтесь теперь забудьте 20% скидки на каждую курсыа каждую курсы",

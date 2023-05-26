@@ -1,37 +1,36 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@200;400;500;600;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@200;400;500;600;700&display=swap');
 
 *,
 *::after,
 *::before {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  transition: 0.3s;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	transition: 0.3s;
+	font-family: "Sans-Serif", "Poppins";
+
 }
 
 .App {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  font-family: "Poppins", sans-serif;
-  background: var(--bkgMain);
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	font-family: 'Poppins', sans-serif;
+	background: var(--bkgMain);
 }
 
 /* global classes */
 
 .container {
-  padding: 0 10%;
-}
-
-.container-mobile {
-  padding: 0 10%;
+	padding: 0 12%;
 }
 
 .hide {
-  opacity: 0 !important;
-  display: none;
-  pointer-events: none;
+	opacity: 0 !important;
+	display: none;
+	pointer-events: none;
+	transform: scale(0.8);
 }
 
 a{
@@ -39,176 +38,166 @@ a{
 }
 
 .main_text {
-  color: var(--textMain);
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 24px;
+	color: var(--textMain);
+	font-family: 'Poppins', Sans-Serif;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 24px;
 }
 
 .secondary_text {
-  color: var(--textSec);
-  font-family: "Poppins", sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 26px;
+	color: var(--textSec);
+	font-family: 'Poppins', sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 26px;
 }
 
 .secondary_small_text {
-  color: var(--textSec);
-  font-family: "Poppins", sans-serif;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 12px;
-  line-height: 20px;
+	color: var(--textSec);
+	font-family: 'Poppins', sans-serif;
+	font-style: normal;
+	font-weight: 600;
+	font-size: 12px;
+	line-height: 20px;
 }
 
 .secondary_mid_text {
-  color: var(--textSec);
-  font-family: "Poppins", sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 28px;
+	color: var(--textSec);
+	font-family: 'Poppins', sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 28px;
 }
 
 .mainColorText {
-  color: var(--textMain) !important;
+	color: var(--textMain) !important;
 }
 
 .OrangeText {
-  color: var(--Orange) !important;
+	color: var(--Orange) !important;
 }
 
 @media (max-width: 678px) {
-  .sections_title {
-    width: 100%;
-    text-align: center;
-  }
-
-  .container {
-    padding: 0 4%;
-  }
-
-  .container-mobile {
-    padding: 0 2%;
-  }
+	.sections_title {
+		width: 100%;
+		text-align: center;
+	}
+	.container {
+		padding: 0 6%;
+	}
 }
 
 /* scroll bar */
 
 /* width */
 ::-webkit-scrollbar {
-  width: 4px;
-  margin-right: 10px;
+	width: 4px;
+	margin-right: 10px;
 }
 
 ::-webkit-scrollbar-track {
-  background: #161c24;
+	background: #161c24;
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #fa541c;
-  border-radius: 5px;
+	background: #fa541c;
+	border-radius: 5px;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: rgba(145, 158, 171, 1);
+	background: rgba(145, 158, 171, 1);
 }
 
 h1 {
-  color: var(--textMain);
-  font-family: "Barlow";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 64px;
-  line-height: 80px;
+	color: var(--textMain);
+	font-family: 'Barlow', Sans-Serif;
+	font-style: normal;
+	font-weight: 700;
+	font-size: 64px;
+	line-height: 80px;
 }
 
 h2 {
-  color: var(--textMain);
-  font-family: "Barlow";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 48px;
-  line-height: 64px;
+	color: var(--textMain);
+	font-family: 'Barlow', Sans-Serif;
+	font-style: normal;
+	font-weight: 700;
+	font-size: 48px;
+	line-height: 64px;
 }
 
 h3 {
-  color: var(--textMain);
-  font-family: "Barlow";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 54px;
+	color: var(--textMain);
+	font-family: 'Barlow', Sans-Serif;
+	font-style: normal;
+	font-weight: 700;
+	font-size: 36px;
+	line-height: 54px;
 }
 
 h4 {
-  color: var(--textMain);
-  font-family: "Barlow";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 24px;
-  line-height: 36px;
+	color: var(--textMain);
+	font-family: 'Barlow', Sans-Serif;
+	font-style: normal;
+	font-weight: 700;
+	font-size: 24px;
+	line-height: 36px;
 }
 
 h5 {
-  color: var(--textMain);
-  font-family: "Barlow";
-  font-style: normal;
-  font-weight: 600;
-  font-size: 20px;
-  line-height: 30px;
+	color: var(--textMain);
+	font-family: 'Barlow', Sans-Serif;
+	font-style: normal;
+	font-weight: 600;
+	font-size: 20px;
+	line-height: 30px;
 }
 
 h6 {
-  color: var(--textMain);
-  font-family: "Barlow";
-  font-style: normal;
-  font-weight: 600;
-  font-size: 18px;
-  line-height: 28px;
+	color: var(--textMain);
+	font-family: 'Barlow', Sans-Serif;
+	font-style: normal;
+	font-weight: 600;
+	font-size: 18px;
+	line-height: 28px;
 }
 
 @media (max-width: 678px) {
-  h1 {
-    font-weight: 700;
-    font-size: 40px;
-    line-height: 50px;
-    text-align: center;
-  }
-
-  h2 {
-    font-weight: 700;
-    font-size: 32px;
-    line-height: 42px;
-  }
-
-  h3 {
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 36px;
-  }
-
-  h4 {
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 30px;
-  }
-
-  h5 {
-    font-weight: 600;
-    font-size: 20px;
-    line-height: 30px;
-  }
-
-  h6 {
-    font-weight: 600;
-    font-size: 18px;
-    line-height: 28px;
-  }
+	h1 {
+		font-weight: 700;
+		font-size: 40px;
+		line-height: 50px;
+		text-align: center;
+	}
+	h2 {
+		font-weight: 700;
+		font-size: 32px;
+		line-height: 42px;
+	}
+	h3 {
+		font-weight: 700;
+		font-size: 24px;
+		line-height: 36px;
+	}
+	h4 {
+		font-weight: 700;
+		font-size: 20px;
+		line-height: 30px;
+	}
+	h5 {
+		font-weight: 600;
+		font-size: 20px;
+		line-height: 30px;
+	}
+	h6 {
+		font-weight: 600;
+		font-size: 18px;
+		line-height: 28px;
+	}
 }
