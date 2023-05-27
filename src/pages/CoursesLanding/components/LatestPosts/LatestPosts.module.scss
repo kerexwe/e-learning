@@ -7,6 +7,7 @@
 
 	> .top {
 		display: flex;
+		align-items: center;
 		justify-content: space-between;
 		padding: 0px 0px 40px;
 		> button {
@@ -32,5 +33,26 @@
 		gap: 60px;
 		justify-content: center;
 		width: 100%;
+	}
+}
+
+@media (max-width: 678px) {
+	.wrapper {
+		padding-top: 64px;
+		padding-bottom: 64px;
+		> .top {
+			flex-direction: column;
+			align-items: center;
+			gap: 64px;
+			> .cards {
+				display: flex;
+				flex-direction: column;
+				align-items: flex-start;
+				gap: 24px;
+				flex: none;
+				align-self: stretch;
+				flex-grow: 0;
+			}
+		}
 	}
 }

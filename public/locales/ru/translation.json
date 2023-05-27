@@ -65,7 +65,11 @@
 			"h2" : "Скачать приложение",
 			"p" : "Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Phasellus leo dolor, tempus non, auctor et, hendrerit quis, nisi.",
 			"h6" : "Отсканируйте QR-код для установки на свое устройство"
-		}
+		},
+    "latestPosts" : {
+      "h2" : "Последние посты",
+      "button" : "Просмотреть все"
+    }
 	}
 } 
 
