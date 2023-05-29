@@ -2,7 +2,7 @@ import React, { FC } from 'react';
 import './FeaturedCourses.scss';
 
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Navigation } from 'swiper';
+import { Navigation, SwiperOptions } from 'swiper';
 
 import 'swiper/css';
 import 'swiper/css/navigation';
@@ -51,6 +51,21 @@ const dataArr = [
 ];
 
 const FeaturedCourses: FC = () => {
+	const breakpoints = {
+		1: {
+			slidesPerView: 1,
+			spaceBetween: 20,
+		},
+		570: {
+			slidesPerView: 2,
+			spaceBetween: 30,
+		},
+		1100: {
+			slidesPerView: 3,
+			spaceBetween: 50,
+		},
+	};
+
 	return (
 		<section className={'FeaturedCourses container'}>
 			<div className={'FeaturedCourses_title'}>
@@ -59,7 +74,6 @@ const FeaturedCourses: FC = () => {
 			</div>
 			<div className='FeaturedCourses_swiper'>
 				<Swiper
-					// loop={true}
 					slidesPerView={3}
 					spaceBetween={50}
 					grabCursor={true}
@@ -70,7 +84,8 @@ const FeaturedCourses: FC = () => {
 						clickable: true,
 					}}
 					modules={[Navigation]}
-					className='swiper_container'>
+					className='swiper_container'
+					breakpoints={breakpoints}>
 					{dataArr.map(({ img, Category, Price, discount, title, teacher, teachersCount }) => {
 						return (
 							<SwiperSlide>
