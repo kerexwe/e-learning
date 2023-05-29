@@ -2,7 +2,7 @@ import React, { FC } from 'react';
 import './FeaturedCourses.scss';
 
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Navigation, SwiperOptions } from 'swiper';
+import { Navigation } from 'swiper';
 
 import 'swiper/css';
 import 'swiper/css/navigation';
@@ -14,6 +14,7 @@ import CardCourse from './CardCourse/CardCourse';
 import img from './assets/IMG.svg';
 import img_1 from './assets/IMG-1.svg';
 import img_2 from './assets/IMG-2.svg';
+import { useTranslation } from 'react-i18next';
 
 const dataArr = [
 	{
@@ -50,7 +51,13 @@ const dataArr = [
 	},
 ];
 
+const base = "Landing.FeaturedCourses."
+
 const FeaturedCourses: FC = () => {
+
+
+	const { t } = useTranslation();
+
 	const breakpoints = {
 		1: {
 			slidesPerView: 1,
@@ -69,7 +76,7 @@ const FeaturedCourses: FC = () => {
 	return (
 		<section className={'FeaturedCourses container'}>
 			<div className={'FeaturedCourses_title'}>
-				<h2>Featured Courses</h2>
+				<h2>{t(`${base}h2`)}</h2>
 				<p className='secondary_mid_text'>Nullam accumsan lorem in dui. Praesent ac massa at ligula laoreet iaculis.</p>
 			</div>
 			<div className='FeaturedCourses_swiper'>
