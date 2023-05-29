@@ -1,0 +1,31 @@
+@mixin flex-c {
+	display: flex;
+	flex-direction: column;
+}
+.FeaturedCourses {
+	@include flex-c;
+	text-align: start;
+	gap: 80px;
+	#{&}_title {
+		gap: 24px;
+		@include flex-c;
+	}
+	#{&}_swiper {
+		.swiper_container {
+            margin-top: -120px;
+            padding-top: 100px;
+		}
+	}
+
+	.slider-controler {
+		position: absolute;
+		width: 100px;
+		height: 45px;
+		top: 0;
+		right: 0;
+		z-index: 100;
+		.slider-arrow::after {
+			content: '';
+		}
+	}
+}
