@@ -36,10 +36,6 @@ a {
 	text-decoration: none;
 }
 
-a{
-  text-decoration: none;
-}
-
 .main_text {
 	color: var(--textMain);
 	font-family: 'Poppins', Sans-Serif;
@@ -85,7 +81,6 @@ a{
 }
 
 @media (max-width: 678px) {
-
 	.sections_title {
 		width: 100%;
 		text-align: center;
@@ -173,7 +168,6 @@ h6 {
 }
 
 @media (max-width: 678px) {
-
 	h1 {
 		font-weight: 700;
 		font-size: 40px;
@@ -210,4 +204,13 @@ h6 {
 .divider {
 	border: 1px dashed rgba(145, 158, 171, 0.24);
 	width: 100%;
+}
+
+.Subtitle2 {
+	color: var(--textMain);
+	font-family: 'Poppins';
+	font-style: normal;
+	font-weight: 600;
+	font-size: 14px;
+	line-height: 26px;
 }
