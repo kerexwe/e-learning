@@ -69,6 +69,11 @@
     "latestPosts" : {
       "h2" : "Latest Posts",
       "button" : "View All"
-    }
+    },
+    "FeaturedCourses": {
+			"h2": "Featured Courses",
+			"p": "Nullam accumsan lorem in dui. Praesent ac massa at ligula laoreet iaculis."
+		}
+
 	}
 }
