@@ -1,8 +1,8 @@
 import { FC } from 'react';
 import css from './Post.module.scss';
-import { PostType } from '../../../../../types/types';
+import { PostType } from '../../types/types';
 
-export const Post: FC<PostType> = ({ img, month, day, h5, p, name, time, pfp }) => {
+export const Post: FC<PostType> = ({ img, month, day, title, desc, name, time, pfp }) => {
 	return (
 		<div className={css.card}>
 			<div className={css.card_img} style={{ background: `url(${img}) center/cover no-repeat` }}></div>
@@ -14,8 +14,8 @@ export const Post: FC<PostType> = ({ img, month, day, h5, p, name, time, pfp }) 
 				</div>
 				<div className={css.info}>
 					<span className={css.top}>
-						<h5>{h5}</h5>
-						<p className='secondary_text'>{p}</p>
+						<h5>{title}</h5>
+						<p className='secondary_text'>{desc}</p>
 					</span>
 					<span className={css.user}>
 						<img src={pfp} alt='pfp' />
@@ -30,15 +30,31 @@ export const Post: FC<PostType> = ({ img, month, day, h5, p, name, time, pfp }) 
 	);
 };
 
-export const Post_Small: FC<PostType> = ({ img, month, day, h5, p, name, time, pfp }) => {
+export const Post_Small: FC<PostType> = ({ img, month, day, title, desc, name, time, pfp }) => {
 	return (
 		<>
 			<div className={css.card_small}>
 				<div className={css.card_img_small} style={{ background: `url(${img}) center/cover no-repeat` }}></div>
 				<div className={css.card_small__content}>
-					<h6>{h5}</h6>
+					<h6>{title}</h6>
 					<span>
-						<p style={{fontWeight: 400}} className='secondary_small_text'>{`${month} ${day}, 2023 • ${time}`}</p>
+						<p style={{ fontWeight: 400 }} className='secondary_small_text'>{`${month} ${day}, 2023 • ${time}`}</p>
+					</span>
+				</div>
+			</div>
+		</>
+	);
+};
+
+export const Post_Big: FC<PostType> = ({ img, month, day, title, desc, name, time, pfp }) => {
+	return (
+		<>
+			<div className={css.card_big}>
+				<div className={css.card_img_big} style={{ background: `url(${img}) center/cover no-repeat` }}></div>
+				<div className={css.card_big__content}>
+					<h6>{title}</h6>
+					<span>
+						<p style={{ fontWeight: 400 }} className='secondary_small_text'>{`${month} ${day}, 2023 • ${time}`}</p>
 					</span>
 				</div>
 			</div>
