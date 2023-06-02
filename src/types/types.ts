@@ -18,9 +18,9 @@ export interface PostType {
 	month: string;
 	day: number;
 	title: string;
-	desc: string;
-	name: string;
+	desc?: string;
+	name?: string;
 	time: string;
-	pfp: string;
+	pfp?: string;
 	tags?: Array<string>;
 }

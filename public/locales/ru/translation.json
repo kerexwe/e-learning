@@ -74,5 +74,13 @@
 			"h2": "Избранные курсы",
 			"p": "Nullam accumsan lorem in dui. Praesent ac massa at ligula laoreet iaculis."
 		}
-	}
+	},
+	"BlogPage": {
+		"Categories": "Категории",
+		"Posts": "Последние записи",
+		"Tags": "Популярные теги",
+		"Ad": "Реклама",
+		"Button": "Перейти сейчас",
+		"h1_loading": "Пусто..."
+	}	
 }

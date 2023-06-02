@@ -10,9 +10,6 @@ const useBlogs = () => {
 	const { i18n } = useTranslation();
 	const langauge = i18n.resolvedLanguage
 
-	console.log(langauge)
-	console.log(blog)
-
 	const getBlog = useCallback(async () => {
 		const touSliderData: Array<any> | ((prevState: never[]) => never[]) = [];
 		const getFireStore = query(collection(db, `${langauge === 'en' ? 'blogs' : 'blogs_ru'}`));

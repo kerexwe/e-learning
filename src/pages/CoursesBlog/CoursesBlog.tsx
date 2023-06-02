@@ -1,7 +1,6 @@
 /* eslint-disable react/jsx-pascal-case */
 import React, { FC, useEffect } from 'react';
 import useBlogs from '../../hooks/useBlogs';
-import { PostArr, PostArr_ru } from '../../constants/PostArr';
 import { Post_Big } from './../../components/Post/Post';
 import { PostType } from '../../types/types';
 import css from './CoursesBlog.module.scss';
@@ -9,14 +8,8 @@ import css from './CoursesBlog.module.scss';
 import Blogs_main from './Blogs_main/Blogs_main';
 
 const CoursesBlog: FC = () => {
-	const { isLoading, blog, getBlog, addBlog, langauge } = useBlogs();
-
-	// const upload = () => {
-	// 	PostArr_ru.map((e) => {
-	// 	return addBlog(e);
-	// 	});
-	// };
-
+	const { isLoading, blog, getBlog, langauge } = useBlogs();
+	
 	useEffect(() => {
 		getBlog();
 	}, [getBlog, langauge]);
