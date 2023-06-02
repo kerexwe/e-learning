@@ -12,6 +12,7 @@ export interface ButtonProps {
 }
 
 export interface PostType {
+	tid?: string;
 	category?:string;
 	img: string;
 	month: string;

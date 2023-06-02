@@ -3,8 +3,8 @@
 	flex-direction: column;
 	border: 1px solid rgba(145, 158, 171, 0.24);
 	border-radius: 16px;
-	width: calc(33.3%);
 	overflow: hidden;
+	cursor: pointer;
 	> .card_img {
 		width: 100%;
 		height: 362px;
@@ -15,8 +15,6 @@
 		align-items: flex-start;
 		padding: 24px;
 		gap: 24px;
-		height: calc(100% - 362px);
-
 		.date {
 			display: flex;
 			flex-direction: column;
@@ -55,6 +53,73 @@
 	}
 }
 
+.card:hover{
+	opacity: 0.5;
+}
+
+.card_small {
+	display: flex;
+	flex-direction: row;
+	align-items: flex-start;
+	padding: 0px;
+	gap: 16px;
+	height: 80px;
+	align-self: stretch;
+	.card_img_small {
+		width: 80px !important;
+		height: 80px !important;
+		border-radius: 12px;
+	}
+	.card_small__content {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		text-align: start;
+		gap: 8px;
+		width: 239px;
+		height: 80px;
+		align-self: stretch;
+	}
+}
+
+.card_big {
+	background: var(--bkgSec);
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	padding-top: 180px;
+	padding-bottom: 120px;
+	#{&}_img {
+		width: 746px;
+		height: 559.5px;
+		border-radius: 16px;
+	}
+
+	.card_big_content {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		align-items: flex-start;
+		padding: 40px 0px 40px 64px;
+		gap: 24px;
+		text-align: start;
+		height: 559.5px;
+		width: 406px;
+		.card_big_content_main {
+			display: flex;
+			flex-direction: column;
+			align-items: flex-start;
+			gap: 8px;
+		}
+		.card_big_content_user {
+			display: flex;
+			align-items: flex-start;
+			gap: 8px;
+			align-items: center;
+		}
+	}
+}
+
 @media (max-width: 678px) {
 	.card_small {
 		display: flex;
@@ -73,11 +138,30 @@
 			display: flex;
 			flex-direction: column;
 			align-items: flex-start;
-            text-align: start;
+			text-align: start;
 			gap: 8px;
 			width: 239px;
 			height: 80px;
-            align-self: stretch;
+			align-self: stretch;
+		}
+	}
+
+	.card_big {
+		height: fit-content;
+		flex-direction: column;
+		padding-top: 80px;
+		padding-bottom: 80px;
+		gap: 24px;
+		#{&}_img {
+			width: 100%;
+			height: 30vh;
+		}
+
+		.card_big_content {
+			flex-direction: column;
+			padding: 0;
+			height: fit-content;
+			width: auto;
 		}
 	}
 }

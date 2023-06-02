@@ -49,12 +49,19 @@ export const Post_Small: FC<PostType> = ({ img, month, day, title, desc, name, t
 export const Post_Big: FC<PostType> = ({ img, month, day, title, desc, name, time, pfp }) => {
 	return (
 		<>
-			<div className={css.card_big}>
-				<div className={css.card_img_big} style={{ background: `url(${img}) center/cover no-repeat` }}></div>
-				<div className={css.card_big__content}>
-					<h6>{title}</h6>
-					<span>
-						<p style={{ fontWeight: 400 }} className='secondary_small_text'>{`${month} ${day}, 2023 • ${time}`}</p>
+			<div className={css.card_big + " container"}>
+				<div className={css.card_big_img} style={{ background: `url(${img}) center/cover no-repeat` }}></div>
+				<div className={css.card_big_content}>
+					<main className={css.card_big_content_main}>
+						<span>
+							<p style={{ fontWeight: 400 }} className='secondary_small_text'>{`${month} ${day}, 2023 • ${time}`}</p>
+						</span>
+						<h3>{title}</h3>
+						<p className='secondary_mid_text'>{desc}</p>
+					</main>
+					<span className={css.card_big_content_user}>
+						<img src={pfp} alt='pfp' />
+						<p className='secondary_text mainColorText'>{name}</p>
 					</span>
 				</div>
 			</div>
