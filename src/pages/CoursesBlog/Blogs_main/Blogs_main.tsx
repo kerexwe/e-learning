@@ -106,12 +106,19 @@ const Blogs_main: FC = () => {
 	};
 
 	function scrollTo() {
-		scroller.scrollTo('scroll-to-element', {
-			duration: 400,
-			delay: 0,
-			offset: -200,
-			smooth: 'easeInOutQuart',
-		});
+		if (isDesktopOrLaptop) {
+			scroller.scrollTo('scroll-to-element', {
+				duration: 400,
+				delay: 0,
+				offset: -200,
+				smooth: 'easeInOutQuart',
+			});
+		}else{
+			window.scrollTo({
+				top : 800,
+				behavior: "smooth",
+			})
+		}
 	}
 
 	const handleInputChange = (event: React.ChangeEvent<HTMLInputElement>) => {
