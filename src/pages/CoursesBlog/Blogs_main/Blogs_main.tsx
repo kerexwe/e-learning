@@ -17,6 +17,7 @@ import { Element, scroller } from 'react-scroll';
 import { PostType } from '../../../types/types';
 import Button from '../../../components/Button/Button';
 import { useTranslation } from 'react-i18next';
+import { Link } from 'react-router-dom';
 
 const sxStyles = {
 	'& .Mui-selected': {
@@ -113,11 +114,11 @@ const Blogs_main: FC = () => {
 				offset: -200,
 				smooth: 'easeInOutQuart',
 			});
-		}else{
+		} else {
 			window.scrollTo({
-				top : 800,
-				behavior: "smooth",
-			})
+				top: 800,
+				behavior: 'smooth',
+			});
 		}
 	}
 
@@ -141,7 +142,11 @@ const Blogs_main: FC = () => {
 	const renderData = useMemo(
 		() =>
 			currentPosts.map(({ tid, img, month, day, title, desc, name, time, pfp }, index) => {
-				return <Post key={tid} img={img} month={month} day={day} title={title} desc={desc} name={name} time={time} pfp={pfp} />;
+				return (
+					<Link to={`./details/${tid}`}>
+						<Post key={tid} img={img} month={month} day={day} title={title} desc={desc} name={name} time={time} pfp={pfp} />
+					</Link>
+				);
 			}),
 		[currentPosts, blog],
 	);
@@ -169,9 +174,12 @@ const Blogs_main: FC = () => {
 
 	useEffect(() => {
 		getBlog();
+		scrollTo();
 	}, [getBlog, langauge]);
 
-	useEffect(() => setData(blog), [blog, langauge]);
+	useEffect(() => {
+		setData(blog);
+	}, [blog, langauge]);
 
 	useEffect(() => {
 		setCurrentPosts(Data.slice(firstPostIndex, lastPostIndex));

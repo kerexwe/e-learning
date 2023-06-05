@@ -5,7 +5,6 @@ import { AppSelector } from './redux/index';
 import { ThemeType } from './types/types';
 import CoursesLanding from './pages/CoursesLanding/CoursesLanding';
 import CoursesBlog from './pages/CoursesBlog/CoursesBlog';
-import CoursesBlogDetails from './pages/CoursesBlog/CoursesBlogDetails';
 import CoursesList from './pages/CoursesList/CoursesList';
 import CoursesListDetails from './pages/CoursesList/CoursesList';
 import CoursesContact from './pages/CoursesContact/CoursesContact';
@@ -14,6 +13,7 @@ import NotFoundPage from './pages/NotFoundPage/NotFoundPage';
 import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer';
 import Newsletter from './components/Newsletter/Newsletter';
+import CoursesBlogDetails from './pages/CoursesBlogDetails/CoursesBlogDetails';
 
 const App: React.FC = () => {
   const themeDark = AppSelector((state: ThemeType) => state.themeDark);
