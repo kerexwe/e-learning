@@ -9,8 +9,8 @@
 	flex-direction: row;
 	align-items: center;
 	gap: 8px;
+	overflow: hidden;
 	justify-content: flex-start;
-	overflow: auto;
 	width: 100%;
 	.breadCrumbs--static {
 		font-family: 'Poppins';
@@ -28,6 +28,8 @@
 		font-size: 14px;
 		line-height: 26px;
 		color: var(--textSec);
+		min-width: 500px;
+		text-align: start;
 	}
 	span {
 		color: var(--textMain);
@@ -281,5 +283,37 @@
 
 	.Blog--divider {
 		border: 1px solid rgba(145, 158, 171, 0.24);
+	}
+}
+
+@media (max-width: 678px) {
+	.Blog {
+		.Blog_video {
+			padding: 4% 6%;
+			.Blog_video_bkg {
+				border-radius: 18px;
+				height: clamp(188px, 200px, 250px);
+			}
+		}
+
+		.Blog_details {
+			padding: 50px 6%;
+			width: 100%;
+			.Blog_details_mainInfo--mainPhoto{
+				height: 252px !important;
+			}
+		}
+
+		.Blog_navigation {
+			padding: 40px 0px;
+			flex-direction: column;
+			width: 90%;
+			>a:first-of-type {
+				align-self: flex-start;
+			}
+			>a:last-of-type {
+				align-self: flex-end;
+			}
+		}
 	}
 }

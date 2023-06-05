@@ -73,7 +73,7 @@ const CoursesBlogDetails: FC = () => {
 	console.log(theElement);
 	console.log(next);
 	console.log(blog);
-	
+
 	//? effects
 	const handleChangingLanguages = useMemo(() => {
 		navigate('/Blog');
