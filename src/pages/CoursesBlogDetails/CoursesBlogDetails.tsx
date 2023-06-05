@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 import React, { FC, useEffect, useMemo, useState } from 'react';
 import { Link, useLocation, useNavigate, useParams } from 'react-router-dom';
 import useBlogs from '../../hooks/useBlogs';
@@ -75,6 +76,7 @@ const CoursesBlogDetails: FC = () => {
 	console.log(blog);
 
 	//? effects
+	// eslint-disable-next-line @typescript-eslint/no-unused-vars
 	const handleChangingLanguages = useMemo(() => {
 		navigate('/Blog');
 		return 0;
