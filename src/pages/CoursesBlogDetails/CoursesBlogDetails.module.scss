@@ -1,6 +1,11 @@
 .breadCrumbs {
-	margin-top: 200px;
+	margin-top: 130px;
 	display: flex;
+	position: sticky;
+	top: 93px;
+	height: 60px;
+	z-index: 100;
+	background: var(--bkgMain);
 	flex-direction: row;
 	align-items: center;
 	gap: 8px;
@@ -13,20 +18,20 @@
 		font-weight: 400;
 		font-size: 14px;
 		line-height: 26px;
-    color: var(--textMain);
-    cursor: pointer;
+		color: var(--textMain);
+		cursor: pointer;
 	}
 	.breadCrumbs--title {
-    font-family: 'Poppins';
+		font-family: 'Poppins';
 		font-style: normal;
 		font-weight: 400;
 		font-size: 14px;
 		line-height: 26px;
-    color: var(--textSec);
+		color: var(--textSec);
 	}
-  span{
-    color: var(--textMain);
-  }
+	span {
+		color: var(--textMain);
+	}
 }
 
 .Blog {
@@ -35,7 +40,7 @@
 	align-items: center;
 
 	.Blog_video {
-		padding: 250px 12%;
+		padding: 4% 12%;
 		width: 100%;
 		position: relative;
 		.Blog_video_bkg {

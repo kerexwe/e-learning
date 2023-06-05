@@ -13,6 +13,7 @@ import insta from './assets/ic_social/insta.svg';
 import LinkedIn from './assets/ic_social/LinkedIn.svg';
 import Twitter from './assets/ic_social/Twitter.svg';
 import { PostType } from '../../types/types';
+import { useTranslation } from 'react-i18next';
 
 const arr_socialMediaData = [
 	{
@@ -37,7 +38,10 @@ const arr_socialMediaData = [
 	},
 ];
 
+const base = 'Blog--details.';
+
 const CoursesBlogDetails: FC = () => {
+	const { t } = useTranslation();
 	const { blog, getBlog, isLoading, langauge } = useBlogs();
 	const navigate = useNavigate();
 	const { id } = useParams();
@@ -69,27 +73,11 @@ const CoursesBlogDetails: FC = () => {
 	console.log(theElement);
 	console.log(next);
 	console.log(blog);
-
-	//? Functions
-	const BreadCrumbs = (
-		<nav className={scss['breadCrumbs'] + ' container'}>
-			<p className={scss['breadCrumbs--static']} onClick={() => navigate('/')}>
-				Home
-			</p>
-			<span>&gt;</span>
-			<p className={scss['breadCrumbs--static']} onClick={() => navigate('/')}>
-				Blog
-			</p>
-			<span>&gt;</span>
-			<p className={scss['breadCrumbs--title']}>{isLoading ? '...' : theElement?.title}</p>
-		</nav>
-	);
-
-  
+	
 	//? effects
 	const handleChangingLanguages = useMemo(() => {
 		navigate('/Blog');
-    return 0; 
+		return 0;
 	}, [langauge]);
 
 	useEffect(() => {
@@ -102,6 +90,20 @@ const CoursesBlogDetails: FC = () => {
 	}, [blog, pathname]);
 
 	//? renders
+	const BreadCrumbs = (
+		<nav className={scss['breadCrumbs'] + ' container'}>
+			<p className={scss['breadCrumbs--static']} onClick={() => navigate('/')}>
+				{t(`${base}Home`)}
+			</p>
+			<span>&gt;</span>
+			<p className={scss['breadCrumbs--static']} onClick={() => navigate('/')}>
+				{t(`${base}Blog`)}
+			</p>
+			<span>&gt;</span>
+			<p className={scss['breadCrumbs--title']}>{isLoading ? '...' : theElement?.title}</p>
+		</nav>
+	);
+
 	const Blog__divider = <hr className={scss['Blog--divider']} />;
 
 	const renderBlog_details_top = (
@@ -238,7 +240,7 @@ const CoursesBlogDetails: FC = () => {
 					</svg>
 					<img src={prev?.pfp} alt='profilePhoto' />
 					<span>
-						<p className='secondary_small_text'>PREVIOUS POST</p>
+						<p className='secondary_small_text'>{t(`${base}prev`)}</p>
 						<p className='Subtitle2'>{prev?.title}</p>
 					</span>
 				</div>
@@ -247,7 +249,7 @@ const CoursesBlogDetails: FC = () => {
 			<Link to={`/Blog/details/${next?.tid}`}>
 				<div className={scss.Blog_Navigation_next}>
 					<span>
-						<p className='secondary_small_text'>NEXT POST</p>
+						<p className='secondary_small_text'>{t(`${base}next`)}</p>
 						<p className='Subtitle2'>{next?.title}</p>
 					</span>
 
