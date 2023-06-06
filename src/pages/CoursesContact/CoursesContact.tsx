@@ -19,6 +19,7 @@ import linkedIn_dark from './assets/Icons/linkedIn_dark.svg';
 import twitter_dark from './assets/Icons/twitter_dark.svg';
 import { AppSelector } from '../../redux';
 import { useTranslation } from 'react-i18next';
+import FormContact from './FormContact/FormContact';
 
 const base = 'ContactPage.';
 
@@ -34,59 +35,62 @@ const CoursesContact: React.FC = () => {
 	];
 
 	return (
-		<section className={scss['map'] + ' container'}>
-			<article className={scss['map__info']}>
-				<span className={scss['map__info--title']}>
-					<h2>{t(`${base}h2`)}</h2>
-				</span>
-
-				<div className={scss['map__info__Wrapper']}>
-					<span className={scss['map__info__Wrapper--Information']}>
-						<label>
-							<img src={themeDark ? email_dark : email} alt='email' />
-							<p className='Subtitle2'>{t(`${base}email`)}</p>
-						</label>
-						<a href='mailto:debbie.baker@example.com' rel='noreferrer' target='_blank'>
-							debbie.baker@example.com
-						</a>
+		<>
+			<section className={scss['map'] + ' container'}>
+				<article className={scss['map__info']}>
+					<span className={scss['map__info--title']}>
+						<h2>{t(`${base}h2`)}</h2>
 					</span>
 
-					<span className={scss['map__info__Wrapper--Information']}>
-						<label>
-							<img src={themeDark ? mobile_dark : mobile} alt='mobile' />
-							<p className='Subtitle2'>{t(`${base}Phone`)}</p>
-						</label>
-						<a href='tel:(907) 555-0101' rel='noreferrer'>
-							(907) 555-0101
-						</a>
-					</span>
-
-					<span className={scss['map__info__Wrapper--Information']}>
-						<label>
-							<img src={themeDark ? pin_dark : pin} alt='pin' />
-							<p className='Subtitle2'>{t(`${base}Address`)}</p>
-						</label>
-						<a href='!#' onClick={(e) => e.preventDefault()}>
-							{t(`${base}Address--info`)}
-						</a>
-					</span>
-					<hr className='divider' />
-
-					<div className={scss['map__info__Wrapper__Socail']}>
-						<p className='secondary_small_text mainColorText'>{t(`${base}Follow`)}</p>
-						<span>
-							{iconsArr.map((e) => (
-								<img key={e.name} style={{ cursor: 'pointer' }} src={e.icon} alt={e.name} onClick={() => window.open(`https://${e.name}.com`, '_blank')} />
-							))}
+					<div className={scss['map__info__Wrapper']}>
+						<span className={scss['map__info__Wrapper--Information']}>
+							<label>
+								<img src={themeDark ? email_dark : email} alt='email' />
+								<p className='Subtitle2'>{t(`${base}email`)}</p>
+							</label>
+							<a href='mailto:debbie.baker@example.com' rel='noreferrer' target='_blank'>
+								debbie.baker@example.com
+							</a>
 						</span>
-					</div>
-				</div>
-			</article>
 
-			<div className={scss['map--wrapper']}>
-				<Map />
-			</div>
-		</section>
+						<span className={scss['map__info__Wrapper--Information']}>
+							<label>
+								<img src={themeDark ? mobile_dark : mobile} alt='mobile' />
+								<p className='Subtitle2'>{t(`${base}Phone`)}</p>
+							</label>
+							<a href='tel:(907) 555-0101' rel='noreferrer'>
+								(907) 555-0101
+							</a>
+						</span>
+
+						<span className={scss['map__info__Wrapper--Information']}>
+							<label>
+								<img src={themeDark ? pin_dark : pin} alt='pin' />
+								<p className='Subtitle2'>{t(`${base}Address`)}</p>
+							</label>
+							<a href='!#' onClick={(e) => e.preventDefault()}>
+								{t(`${base}Address--info`)}
+							</a>
+						</span>
+						<hr className='divider' />
+
+						<div className={scss['map__info__Wrapper__Socail']}>
+							<p className='secondary_small_text mainColorText'>{t(`${base}Follow`)}</p>
+							<span>
+								{iconsArr.map((e) => (
+									<img key={e.name} style={{ cursor: 'pointer' }} src={e.icon} alt={e.name} onClick={() => window.open(`https://${e.name}.com`, '_blank')} />
+								))}
+							</span>
+						</div>
+					</div>
+				</article>
+
+				<div className={scss['map--wrapper']}>
+					<Map />
+				</div>
+			</section>
+			<FormContact />
+		</>
 	);
 };
 
