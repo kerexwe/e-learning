@@ -62,7 +62,7 @@ const LatestPosts: FC = () => {
 							})}
 						</div>
 					</MediaQuery>
-					<button onClick={() => navigate('./Blog')}>
+					<button onClick={() => navigate('/Blog')}>
 						{t(`${base}button`)}
 						<svg width='18' height='11' viewBox='0 0 18 11' fill='none' xmlns='http://www.w3.org/2000/svg'>
 							<path d='M17.25 5.4082L12.4375 0.595703L11.4654 1.56783L14.6183 4.7207H0.75V6.0957H14.6183L11.4654 9.24858L12.4375 10.2207L17.25 5.4082Z' fill='#FA541C' />

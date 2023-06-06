@@ -1,0 +1,48 @@
+.OnlineCoursesWrapper {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding-top: 160px;
+	padding-bottom: 160px;
+	min-height: 100vh;
+	gap: 124px;
+	background: rgba(250, 84, 28, 0.08);
+	#{&}_main {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		padding: 0px;
+		gap: 48px;
+		text-align: start;
+		max-width: 464px;
+		> article {
+			display: flex;
+			flex-direction: column;
+			gap: 24px;
+		}
+	}
+	#{&}_aside > img {
+		max-width: 564px;
+	}
+}
+
+@media (max-width: 1200px) {
+	.OnlineCoursesWrapper {
+		justify-content: center;
+		flex-wrap: wrap;
+	}
+}
+
+@media (max-width: 678px) {
+	.OnlineCoursesWrapper {
+		flex-direction: column;
+		gap: 64px;
+		#{&}_main {
+			align-items: center;
+			text-align: center;
+		}
+		#{&}_aside > img {
+			width: 335px;
+		}
+	}
+}
