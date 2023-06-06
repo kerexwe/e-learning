@@ -74,6 +74,13 @@
 			"h2": "Featured Courses",
 			"p": "Nullam accumsan lorem in dui. Praesent ac massa at ligula laoreet iaculis."
 		}
-
-	}
+	},
+  "BlogPage" :{
+    "Categories" : "Categories",
+    "Posts" : "Recent Posts",
+    "Tags" : "Popular Tags",
+    "Ad" : "Advertisement",
+    "Button" : "Go Now",
+    "h1_loading" : "Empty..."
+  }
 }

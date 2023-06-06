@@ -12,12 +12,15 @@ export interface ButtonProps {
 }
 
 export interface PostType {
+	tid?: string;
+	category?:string;
 	img: string;
 	month: string;
 	day: number;
-	h5: string;
-	p: string;
-	name: string;
+	title: string;
+	desc?: string;
+	name?: string;
 	time: string;
-	pfp: string;
+	pfp?: string;
+	tags?: Array<string>;
 }

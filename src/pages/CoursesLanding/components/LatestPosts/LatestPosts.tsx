@@ -1,6 +1,6 @@
 import React, { FC } from 'react';
 import css from './LatestPosts.module.scss';
-import {Post, Post_Small } from './Post/Post';
+import { Post, Post_Small } from '../../../../components/Post/Post';
 import { PostType } from './../../../../types/types';
 import img from './assets/IMG.svg';
 import img_1 from './assets/IMG-1.svg';
@@ -17,8 +17,8 @@ const arr_LatestPosts = [
 		img: img,
 		month: 'Jul',
 		day: 12,
-		h5: 'The 7 Best Things About Event',
-		p: 'Moment in the life of any aspiring astronomer of that it is time to.',
+		title: 'The 7 Best Things About Event',
+		desc: 'Moment in the life of any aspiring astronomer of that it is time to.',
 		name: 'Arlene McCoy',
 		time: '8 min read',
 		pfp: pfp,
@@ -27,8 +27,8 @@ const arr_LatestPosts = [
 		img: img_1,
 		month: 'Sep',
 		day: 24,
-		h5: 'Event Is Your Worst Enemy. 7 Ways To Defeat It',
-		p: 'Moment in the life of any aspiring astronomer of that it is time to.',
+		title: 'Event Is Your Worst Enemy. 7 Ways To Defeat It',
+		desc: 'Moment in the life of any aspiring astronomer of that it is time to.',
 		name: 'Cody Fisher',
 		time: '8 min read',
 		pfp: pfp1,
@@ -37,28 +37,28 @@ const arr_LatestPosts = [
 		img: img_2,
 		month: 'Dec',
 		day: 29,
-		h5: "Thinking About Event? 7 Reasons Why It's ...",
-		p: 'Moment in the life of any aspiring astronomer of that it is time to.',
+		title: "Thinking About Event? 7 Reasons Why It's ...",
+		desc: 'Moment in the life of any aspiring astronomer of that it is time to.',
 		name: 'Marvin McKinney',
 		time: '8 min read',
 		pfp: pfp2,
 	},
 ] as Array<PostType>;
 
-const base = "Landing.latestPosts."
+const base = 'Landing.latestPosts.';
 const LatestPosts: FC = () => {
-    const navigate =  useNavigate()
-    const {t} =  useTranslation()
-    return (
+	const navigate = useNavigate();
+	const { t } = useTranslation();
+	return (
 		<>
 			<section className={css.wrapper + ' container'}>
 				<div className={css.top}>
 					<h2>{t(`${base}h2`)}</h2>
 					<MediaQuery maxWidth={678}>
 						<div className={css.cards}>
-							{arr_LatestPosts.map(({ img, month, day, h5, p, name, time, pfp }) => {
+							{arr_LatestPosts.map(({ img, month, day, title, desc, name, time, pfp }) => {
 								// eslint-disable-next-line react/jsx-pascal-case
-								return <Post_Small img={img} month={month} day={day} h5={h5} p={p} name={name} time={time} pfp={pfp} />;
+								return <Post_Small img={img} month={month} day={day} title={title} desc={desc} name={name} time={time} pfp={pfp} />;
 							})}
 						</div>
 					</MediaQuery>
@@ -71,8 +71,8 @@ const LatestPosts: FC = () => {
 				</div>
 				<MediaQuery minWidth={679}>
 					<div className={css.cards}>
-						{arr_LatestPosts.map(({ img, month, day, h5, p, name, time, pfp }) => {
-							return <Post img={img} month={month} day={day} h5={h5} p={p} name={name} time={time} pfp={pfp} />;
+						{arr_LatestPosts.map(({ img, month, day, title, desc, name, time, pfp }) => {
+							return <Post img={img} month={month} day={day} title={title} desc={desc} name={name} time={time} pfp={pfp} />;
 						})}
 					</div>
 				</MediaQuery>
