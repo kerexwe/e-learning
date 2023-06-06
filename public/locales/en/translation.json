@@ -115,5 +115,22 @@
 		"Blog": "blog",
 		"prev": "PREVIOUS POST",
 		"next": "NEXT POST"
+	},
+	"ContactPage": {
+		"h2": "Get In Touch",
+		"email": "email",
+		"Phone": "Phone",
+		"Address": "Address",
+		"Address--info": "3891 Ranchview Dr. Richardson, California 62639",
+		"Follow": "FOLLOW US",
+		"form": {
+			"h": "Drop us a line",
+			"p": "We normally respond within 2 business days",
+			"Name": "Name",
+			"Email": "Email",
+			"Subject": "Subject",
+			"Message": "Message",
+			"Send Message": "Send Message"
+		}
 	}
 }
