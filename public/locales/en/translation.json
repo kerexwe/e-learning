@@ -109,5 +109,11 @@
 		"team": {
 			"h2": "Our Teachers"
 		}
+	},
+	"Blog--details": {
+		"Home": "Home",
+		"Blog": "blog",
+		"prev": "PREVIOUS POST",
+		"next": "NEXT POST"
 	}
 }
