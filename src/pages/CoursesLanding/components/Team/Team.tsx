@@ -20,7 +20,7 @@ function Team() {
         <div className={scss.team__cards}>
           {
             TeamConst.map((item) => <TeamCard key={item.id} {...item} />)
-          }
+          } 
         </div>
         <a href="/AboutUs"><Button type="white" text="View All Teachers" /></a>
       </div>

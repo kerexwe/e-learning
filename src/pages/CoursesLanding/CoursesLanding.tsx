@@ -6,16 +6,17 @@ import Team from "./components/Team/Team";
 import Main from './components/Main/Main';
 import WeWorkWith from './components/WeWorkWith/WeWorkWith';
 import DownloadApp from './components/DownloadApp/DownloadApp';
+import Say from "./components/Say/Say";
 
 const CoursesLanding: React.FC = () => {
   return (
     <section>
       <Main/>
+      {/* <Say/> */}
       <FeaturedCategory/>
        <WeWorkWith/>
       <Team/>
       <Why/>
-      <Newsletter/>
       <DownloadApp/>
     </section>
   );

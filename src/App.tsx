@@ -6,8 +6,8 @@ import { ThemeType } from './types/types';
 import CoursesLanding from './pages/CoursesLanding/CoursesLanding';
 import CoursesBlog from './pages/CoursesBlog/CoursesBlog';
 import CoursesBlogDetails from './pages/CoursesBlog/CoursesBlogDetails';
-import CoursesList from './pages/CoursesList/CoursesList';
-import CoursesListDetails from './pages/CoursesList/CoursesList';
+import CoursesList from './pages/CoursesList/CoursesList/CoursesList';
+import CoursesListDetails from './pages/CoursesList/CoursesListDetails/CorsesListDetails';
 import CoursesContact from './pages/CoursesContact/CoursesContact';
 import CoursesAbout from './pages/CoursesAbout/CoursesAbout';
 import NotFoundPage from './pages/NotFoundPage/NotFoundPage';
@@ -34,7 +34,7 @@ const App: React.FC = () => {
 				<Route path='/Blog' element={<CoursesBlog />} />
 				<Route path='/Blog/details/:id' element={<CoursesBlogDetails />} />
 				<Route path='/Courses/list' element={<CoursesList />} />
-				<Route path='/Courses/list/details/:id' element={<CoursesListDetails />} />
+				<Route path='/Courses/list/details/:id' element={<CoursesListDetails/>} />
 				<Route path='/Contacts' element={<CoursesContact />} />
 				<Route path='/AboutUs' element={<CoursesAbout />} />
 				<Route path='*' element={<NotFoundPage />} />

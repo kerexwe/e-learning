@@ -1,8 +1,12 @@
 import React from 'react'
+import Hero from './components/Hero/Hero'
+
 
 const CorsesListDetails : React.FC = () => {
   return (
-    <section>CorsesListDetails</section>
+    <section>
+      <Hero/>
+    </section>
   )
 }
 
