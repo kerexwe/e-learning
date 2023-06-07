@@ -1,49 +1,49 @@
 {
-  "header": {
-    "Home": "Home",
-    "Components": "Components",
-    "Pages": "Pages",
-    "Documentation": "Documentation",
-    "Login": "Login",
-    "JoinUs": "Join Us",
-    "Services": "Services",
-    "Blog": "Blog",
-    "CoursesList": "Courses List",
-    "Contacts": "Contacts",
-    "AboutUs": "AboutUs"
-  }, 
-  "footer": {
-    "text": "The starting point for your next project based on easy-to-customize Material-UI © helps you build apps faster and better.",
-    "email": "Email address",
-    "HelpCenter": "HelpCenter",
-    "Terms": "Terms of Service"
-  },
-  "news": {
-    "register": "Register",
-    "h3": "Register Now Forget 20% Discount Every Courses",
-    "p": "Nam ipsum risus, rutrum vitae, vestibulum eu, molestievel, lacus. Sed magna purus, fermentum eu"
-  },
-  "feature": {
-    "title": "Featured Category",
-    "desc": "Since wire-frame renderings are relatively simple and fast to calculate, they are often used in cases",
-    "button": "Explore more",
-    "title2": "Management",
-    "title3": "Web Development",
-    "title5": "Machine Learning",
-    "title6": "Cyber Security",
-    "title7": "Marketing",
-    "student": "students"
-  },
-  "team": {
-    "name1": "Eleanor Pena",
-    "name2": "Kathryn Murphy",
-    "name3": "Dianne Russell",
-    "name4": "Esther Howard",
-    "job1": "UI Designer",
-    "job2": "Hr Manager",
-    "job3": "Leader",
-    "job4": "Project Manager"
-  },
+	"header": {
+		"Home": "Home",
+		"Components": "Components",
+		"Pages": "Pages",
+		"Documentation": "Documentation",
+		"Login": "Login",
+		"JoinUs": "Join Us",
+		"Services": "Services",
+		"Blog": "Blog",
+		"CoursesList": "Courses List",
+		"Contacts": "Contacts",
+		"AboutUs": "AboutUs"
+	},
+	"footer": {
+		"text": "The starting point for your next project based on easy-to-customize Material-UI © helps you build apps faster and better.",
+		"email": "Email address",
+		"HelpCenter": "HelpCenter",
+		"Terms": "Terms of Service"
+	},
+	"news": {
+		"register": "Register",
+		"h3": "Register Now Forget 20% Discount Every Courses",
+		"p": "Nam ipsum risus, rutrum vitae, vestibulum eu, molestievel, lacus. Sed magna purus, fermentum eu"
+	},
+	"feature": {
+		"title": "Featured Category",
+		"desc": "Since wire-frame renderings are relatively simple and fast to calculate, they are often used in cases",
+		"button": "Explore more",
+		"title2": "Management",
+		"title3": "Web Development",
+		"title5": "Machine Learning",
+		"title6": "Cyber Security",
+		"title7": "Marketing",
+		"student": "students"
+	},
+	"team": {
+		"name1": "Eleanor Pena",
+		"name2": "Kathryn Murphy",
+		"name3": "Dianne Russell",
+		"name4": "Esther Howard",
+		"job1": "UI Designer",
+		"job2": "Hr Manager",
+		"job3": "Leader",
+		"job4": "Project Manager"
+	},
 	"Landing": {
 		"Main": {
 			"free": "Free",
@@ -61,10 +61,76 @@
 			"h2": "We Work With",
 			"p": "Quisque aliquet, libero consequat elementum convallis."
 		},
-		"DownloadApp" : {
-			"h2" : "Download App",
-			"p" : "Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Phasellus leo dolor, tempus non, auctor et, hendrerit quis, nisi.",
-			"h6" : "Scan QR code to install on your device"
+		"DownloadApp": {
+			"h2": "Download App",
+			"p": "Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Phasellus leo dolor, tempus non, auctor et, hendrerit quis, nisi.",
+			"h6": "Scan QR code to install on your device"
+		},
+		"latestPosts": {
+			"h2": "Latest Posts",
+			"button": "View All"
+		},
+		"FeaturedCourses": {
+			"h2": "Featured Courses",
+			"p": "Nullam accumsan lorem in dui. Praesent ac massa at ligula laoreet iaculis."
+		}
+	},
+	"BlogPage": {
+		"Categories": "Categories",
+		"Posts": "Recent Posts",
+		"Tags": "Popular Tags",
+		"Ad": "Advertisement",
+		"Button": "Go Now",
+		"h1_loading": "Empty..."
+	},
+	"AboutUsPage": {
+		"Main": {
+			"h1": "Online Courses",
+			"button": "Browse Courses"
+		},
+		"Static": {
+			"h3": "Effective Forms Advertising Internet Web Site",
+			"p": "Over 92% of computers are infected with Adware and spyware. Such software is rarely accompanied by uninstall utility and even when it is it almost always leaves broken Windows",
+			"cards": {
+				"tag_first": "Learners",
+				"tag_sec": "Courses",
+				"tag_thd": "Graduates"
+			}
+		},
+		"Values": {
+			"h2": "Core Values",
+			"cards": {
+				"h5_1": "Structured Approach",
+				"h5_2": "Professional Feedbacks",
+				"h5_3": "Efficiency",
+				"h5_4": "Flexible Schedule"
+			}
+		},
+		"team": {
+			"h2": "Our Teachers"
+		}
+	},
+	"Blog--details": {
+		"Home": "Home",
+		"Blog": "blog",
+		"prev": "PREVIOUS POST",
+		"next": "NEXT POST"
+	},
+	"ContactPage": {
+		"h2": "Get In Touch",
+		"email": "email",
+		"Phone": "Phone",
+		"Address": "Address",
+		"Address--info": "3891 Ranchview Dr. Richardson, California 62639",
+		"Follow": "FOLLOW US",
+		"form": {
+			"h": "Drop us a line",
+			"p": "We normally respond within 2 business days",
+			"Name": "Name",
+			"Email": "Email",
+			"Subject": "Subject",
+			"Message": "Message",
+			"Send Message": "Send Message"
 		}
 	}
 }

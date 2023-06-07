@@ -1,0 +1,67 @@
+@mixin flex-c {
+	display: flex;
+	flex-direction: column;
+}
+.FeaturedCourses {
+	@include flex-c;
+	padding-top: 88px;
+	padding-bottom: 88px;
+	text-align: start;
+	gap: 80px;
+	#{&}_title {
+		gap: 24px;
+		@include flex-c;
+	}
+	#{&}_swiper {
+		.swiper_container {
+			margin-top: -120px;
+			padding-top: 100px;
+			padding-bottom: 40px;
+		}
+	}
+}
+
+@media (min-width: 570px) {
+	.FeaturedCourses {
+		.slider-controler {
+			position: absolute;
+			width: 100px;
+			height: 45px;
+			top: 0;
+			right: 0;
+			z-index: 100;
+			.slider-arrow::after {
+				content: '';
+			}
+		}
+	}
+}
+
+@media (max-width: 570px) {
+	.FeaturedCourses {
+		#{&}_title {
+			text-align: center;
+		}
+		#{&}_swiper {
+			.swiper_container {
+				margin-top: 0;
+				padding-top: 0;
+				padding-bottom: 0;
+				margin: 0 -10px;
+			}
+		}
+
+		.slider-controler {
+			z-index: 100;
+			.slider-arrow::after {
+				display: none;
+			}
+			.swiper-button-next {
+				right: var(--swiper-navigation-sides-offset, -6px);
+			}
+			.swiper-button-prev {
+				left: var(--swiper-navigation-sides-offset, -6px);
+			}
+		}
+	}
+}

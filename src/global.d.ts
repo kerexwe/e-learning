@@ -9,3 +9,4 @@ declare module 'react-slick';
 declare module 'lodash.debounce';
 declare module 'react-html5video';
 declare module 'react-content-loader'
+declare module '*.png';
