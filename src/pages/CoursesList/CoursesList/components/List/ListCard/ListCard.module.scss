@@ -1,0 +1,196 @@
+.card {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    width: 808px;
+    height: 320px;
+    box-shadow: -16px 16px 56px -8px rgba(145, 158, 171, 0.16);
+    border-radius: 16px;
+
+    &__image {
+        img {
+            border-top-left-radius: 16px;
+            border-bottom-left-radius: 16px;
+            width: 240px;
+            height: 320px;
+
+        }
+    }
+
+    &__label {
+        position: absolute;
+        top: 12px;
+        left: 12px;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        padding: 1px 8px;
+        width: 86px;
+        height: 22px;
+        background: #FFC81A;
+        border-radius: 6px;
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 20px;
+        text-align: center;
+        color: #212B36;
+    }
+
+
+    &__description {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 24px;
+        gap: 24px;
+    }
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: start;
+    gap: 8px;
+
+
+    &__desc {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+    }
+
+    &__category {
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 20px;
+        text-align: center;
+        text-transform: uppercase;
+        color: #FA541C;
+    }
+
+    &__price {
+        display: flex;
+        align-items: center;
+    }
+
+    &__item {
+        font-family: 'Barlow';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 36px;
+        text-align: right;
+        color: #212B36;
+    }
+
+    &__item_line {
+        font-family: 'Barlow';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 36px;
+        text-align: right;
+        text-decoration-line: line-through;
+        color: #919EAB;
+    }
+
+}
+
+.raiting {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 12px;
+
+    &__reviews {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 4px;
+    }
+
+    &__divider {
+        height: 20px;
+        border: 1px solid var(--textSec);
+    }
+
+    &__studentsCount {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+    }
+}
+
+.teachers {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 8px;
+
+    #p2 {
+        text-decoration-line: underline;
+        color: #637381;
+    }
+
+    &__name {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        gap: 4px;
+        p{
+            color: #212B36;
+        }
+    }
+
+    &__ava {
+        width: 40px;
+        height: 40px;
+
+        img {
+            width: 100%;
+            border-radius: 100px;
+        }
+    }
+}
+
+.footer {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 20px;
+
+    div {
+        display: flex;
+        align-items: center;
+    }
+}
+
+@media (max-width: 576px) {
+    .card {
+        flex-direction: column;
+        align-items: center;
+        height: 666px;
+
+        &__image {
+            img {
+                width: 335px;
+                border-radius: 0;
+                // width: 100%;
+            }
+        }
+    }
+
+    .header {
+        #p {
+            display: none;
+        }
+    }
+}
