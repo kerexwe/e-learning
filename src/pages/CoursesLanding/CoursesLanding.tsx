@@ -16,7 +16,7 @@ const CoursesLanding: React.FC = () => {
       <FeaturedCategory/>
       <WeWorkWith/>
       <Team/>
-      {/* <Say/> */}
+      <Say/>
       <LatestPosts/>
       <DownloadApp/>
     </section>
