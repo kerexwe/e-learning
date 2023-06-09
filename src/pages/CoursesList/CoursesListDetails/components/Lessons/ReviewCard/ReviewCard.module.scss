@@ -1,0 +1,59 @@
+.card {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 24px;
+    gap: 24px;
+    background: var(--bkgSec2);
+    border: 1px solid rgba(145, 158, 171, 0.24);
+    border-radius: 16px;
+
+    &__decsc {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+    }
+
+    &__title {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 4px;
+        text-align: start;
+
+        p {
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 13px;
+            line-height: 24px;
+            color: var(--textSec)
+        }
+    }
+
+    &__rating {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 4px;
+    }
+
+    &__students {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 8px;
+
+        p {
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 13px;
+            line-height: 24px;
+            text-align: center;
+            color: #919EAB;
+        }
+    }
+
+}

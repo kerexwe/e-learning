@@ -46,7 +46,7 @@ function Hero() {
                         </div>
                         <hr className={scss.footer__divider} />
                         <div className={scss.footer__students}>
-                            <p>180k</p>
+                            <h6>180k</h6>
                             <p className='secondary_text'> students</p>
                         </div>
                     </div>

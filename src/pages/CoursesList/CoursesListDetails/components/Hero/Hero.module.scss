@@ -178,11 +178,12 @@
         gap: 64px;
 
         &__video {
-            width: 335px;
-            height: 251.25px;
-            vido{
-                width: 100%;
-            }
+            display: none;
+            // width: 335px;
+            // height: 251.25px;
+            // vido{
+            //     width: 100%;
+            // }
         }
         &__title{
             width: 335px;
