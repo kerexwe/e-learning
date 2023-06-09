@@ -1,0 +1,96 @@
+.card {
+    text-align: start;
+
+    #p {
+        padding-left: 120px;
+    }
+
+    &__body {
+        // width: 662px;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        padding: 32px 0px;
+        gap: 20px;
+        padding-left: 84px;
+    }
+    
+
+    &__reply {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    &__head {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        padding: 32px 0px;
+        gap: 20px;
+    }
+
+    &__desc {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+
+        p {
+            font-size: 14px;
+            text-align: start;
+        }
+    }
+
+    &__title {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        gap: 88px;
+        width: 100%;
+
+        h6 {
+            font-size: 14px;
+        }
+    }
+
+    &__date {
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 20px;
+        color: #919EAB;
+    }
+
+    &__interactions {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 16px 0px 0px;
+        gap: 16px;
+
+        div {
+            height: 4px;
+            width: 4px;
+            border-radius: 100px;
+            background: #919EAB;
+        }
+
+        button {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            padding: 4px;
+            gap: 8px;
+            border: none;
+            background-color: rgba(0, 0, 0, 0);
+            p{
+                color: var(--textMain);
+            }
+        }
+    }
+
+
+}

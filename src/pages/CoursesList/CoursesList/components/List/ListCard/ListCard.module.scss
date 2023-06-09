@@ -88,7 +88,7 @@
         font-size: 24px;
         line-height: 36px;
         text-align: right;
-        color: #212B36;
+        color: var(--textMain);
     }
 
     &__item_line {
@@ -115,6 +115,9 @@
         flex-direction: row;
         align-items: center;
         gap: 4px;
+        p{
+            color: var(--textMain);
+        }
     }
 
     &__divider {
@@ -126,6 +129,10 @@
         display: flex;
         flex-direction: row;
         align-items: flex-start;
+        p{
+            color: var(--textMain);
+
+        }
     }
 }
 
@@ -146,7 +153,7 @@
         align-items: flex-start;
         gap: 4px;
         p{
-            color: #212B36;
+            color: var(--textMain);
         }
     }
 
@@ -178,11 +185,13 @@
         flex-direction: column;
         align-items: center;
         height: 666px;
+        width: 335px;
 
         &__image {
             img {
                 width: 335px;
-                border-radius: 0;
+                border-top-right-radius: 16px;
+                border-bottom-left-radius: 0px;
                 // width: 100%;
             }
         }
