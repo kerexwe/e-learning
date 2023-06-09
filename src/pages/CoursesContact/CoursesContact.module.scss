@@ -72,9 +72,12 @@
 		flex-direction: column;
 		margin-top: 130px;
 		gap: 64px;
+		justify-content: center;
+		align-items: center;
 		.map--wrapper {
 			height: 335px;
 			min-height: inherit;
+			width: inherit;
 
 			align-self: stretch;
 			> iframe {
