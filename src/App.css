@@ -8,14 +8,13 @@
 	padding: 0;
 	box-sizing: border-box;
 	transition: 0.3s;
-	font-family: 'Sans-Serif', 'Poppins';
+	font-family: 'Poppins', sans-serif;
 }
 
 .App {
 	display: flex;
 	flex-direction: column;
 	text-align: center;
-	font-family: 'Poppins', sans-serif;
 	background: var(--bkgMain);
 }
 

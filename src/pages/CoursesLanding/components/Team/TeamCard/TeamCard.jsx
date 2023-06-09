@@ -13,7 +13,7 @@ function TeamCard({ job, name, image }) {
     <div className={scss.card} >
       <div className={scss.card__text}>
         <h6>{t(name)}</h6>
-        <p>{t(job)}</p>
+        <p className='secondary_text'>{t(job)}</p>
       </div>
       <img className={scss.img} src={themeDark ? shapeDark : shapeLight} alt="" />
         <img className={scss.img1} src={image} alt="" />
